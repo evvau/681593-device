@@ -2,17 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Main page | Интернет-магазин «DEVICE»</title>
+    <title>Главная страница | Интернет-магазин «DEVICE»</title>
   </head>
   <body>
   	<header class="main-header">
   		<a class="main-header-logo" href="#">
-  			<img class="logo-header" src="#" width="1" height="1" alt="Логотип Девайс">
+  			<img class="logo-header" src="http://placehold.it/150x100" width="1" height="1" alt="Логотип Девайс">
   		</a>
   		<p>Поиск по сайту<!--форма--></p>
-  		<a class="catalog-menu-item href="#">Войти</a>
-  		<a class="catalog-menu-item href="#">Сравнить</a>
-  		<a class="catalog-menu-item href="#">Корзина</a>
+  		<a class="catalog-menu-item" href="#">Войти</a>
+  		<a class="catalog-menu-item" href="#">Сравнить</a>
+  		<a class="catalog-menu-item" href="#">Корзина</a>
   		<nav class="main-navigation">
   			<ul class="site-navigation">
   				<li><a class="site-navigation-item" href="#">Каталог товаров</a><span>+<!--выпадающее подменю--></span>
@@ -35,64 +35,57 @@
   	<main class="container">
   		<h1 class="visually-hidden">Интернет магазин device</h1>
   		
-  		<section class="slides">
-  			<div class="slide">
-	  			<img class="slide-selfi" src="#" width="1" height="1" alt="Селфи палка">
-	  			<p><b>Делай селфи, как Бен Стиллер!</b></p>
-	  			<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-	  			<a class="button button-main" href="#">Подробнее</a>
-	  			<span class="button-slide"><!--чекбоксы?!--></span>
-	  			<span class="button-slide"></span>
-	  			<span class="button-slide"></span>
-	  			<table class="slide-info">
-	  				<tr>
-	  					<th>8,5 м</th>
-	  					<th>5 кг</th>
-	  					<th>Карбон</th>
-	  				</tr>
-	  				<tr>
-	  					<td>Длина палки</td>
-	  					<td>Вес палки</td>
-	  					<td>Материал</td>
-	  				</tr>
-	  			</table>
-  			</div>
-  			<div class="slide">
-  				<img class="slide-circlet" src="#" width="1" height="1" alt="Фитнес-браслет">
-  				<p><b>Худеем правильно!</b></p>
-  				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-  				<a class="button button-main" href="#">Подробнее</a>
-  				<span class="button-slide"></span>
-	  			<span class="button-slide"><!--чекбоксы?!--></span>
-	  			<span class="button-slide"></span>
-	  			<table class="slide-info">
-	  				<tr>
-	  					<th>48 часов</th>
-	  				</tr>
-	  				<tr>
-	  					<td>Без подзарядки</td>
-	  				</tr>
-	  			</table>
-  			</div>
-  			<div class="slide">
-  				<img class="slide-quadrocopter" src="#"  width="1" height="1" alt="Квадрокоптер">
-  				<p><b>Порхает как бабочка, жалит как пчела!</b></p>
-  				<p>Этот обычный на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-  				<a class="button button-main" href="#" >Подробнее</a>
-  				<span class="button-slide"></span>
-	  			<span class="button-slide"></span>
-	  			<span class="button-slide"><!--чекбоксы?!--></span>
-	  			<table class="slide-info">
-	  				<tr>
-	  					<th>800 м</th>
-	  					<th>50 м</th>
-	  				</tr>
-	  				<tr>
-	  					<td>Дальность полета</td>
-	  					<td>Радиус поражения</td>
-	  				</tr>
-	  			</table>
-  			</div>		
+  		<section class="slides promo">
+  			<ul class="slide">
+          <li class="promo-slide">
+  	  			<img class="slide-selfi" src="http://placehold.it/150x100" width="1" height="1" alt="Селфи палка">
+  	  			<p><b>Делай селфи, как Бен Стиллер!</b></p>
+  	  			<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+  	  			<a class="button button-main" href="#">Подробнее</a>
+  	  			<table class="slide-info">
+  	  				<tr>
+  	  					<td>8,5 м</td><!--Добавить сюда класс, чтобы затем стилизовать по классу, или как то иначе-->
+  	  					<td>5 кг</td>
+  	  					<td>Карбон</td>
+  	  				</tr>
+  	  				<tr>
+  	  					<td>Длина палки</td>
+  	  					<td>Вес палки</td>
+  	  					<td>Материал</td>
+        		</tr>
+  	  			</table>
+          </li>
+          <li class="promo-slide">
+    				<img class="slide-circlet" src="http://placehold.it/150x100" width="1" height="1" alt="Фитнес-браслет">
+    				<p><b>Худеем правильно!</b></p>
+    				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+    				<a class="button button-main" href="#">Подробнее</a>
+  	  			<table class="slide-info">
+  	  				<tr>
+  	  					<td>48 часов</td>
+  	  				</tr>
+  	  				<tr>
+  	  					<td>Без подзарядки</td>
+  	  				</tr>
+  	  			</table>
+          </li>
+          <li class="promo-slide">
+    				<img class="slide-quadrocopter" src="http://placehold.it/150x100"  width="1" height="1" alt="Квадрокоптер">
+    				<p><b>Порхает как бабочка, жалит как пчела!</b></p>
+    				<p>Этот обычный на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+    				<a class="button button-main" href="#" >Подробнее</a>
+  	  			<table class="slide-info">
+  	  				<tr>
+  	  					<td>800 м</td>
+  	  					<td>50 м</td>
+  	  				</tr>
+  	  				<tr>
+  	  					<td>Дальность полета</td>
+  	  					<td>Радиус поражения</td>
+  	  				</tr>
+  	  			</table>
+          </li>
+  			</ul>		
   		</section>
 
   		<section class="popular">
@@ -119,45 +112,52 @@
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка разумеется.</p>
   		</section>
 
-  		<section class="logotypes">
-  			<a class="logotypes-item" href="#">
-  				<img src="#" width="1" height="1" class="logotype" alt="logo1">
-  			</a>
-  			<a class="logotypes-item" href="#">
-  				<img src="#" width="1" height="1" class="logotype" alt="logo2">
-  			</a>
-  			<a class="logotypes-item" href="#">
-  				<img src="#" width="1" height="1" class="logotype" alt="logo3">
-  			</a>
-  			<a class="logotypes-item" href="#">
-  				<img src="#" width="1" height="1" class="logotype" alt="logo4">
-  			</a>
+  		<section class="partners-logotypes">
+        <ul class="partners-logotypes-list">
+          <li class="partners-logotypes-item">
+      			<a class="logotypes-item" href="#">
+      				<img class="logotype" src="http://placehold.it/150x100" width="1" height="1"  alt="logo1">
+      			</a>
+          </li>
+          <li class="partners-logotypes-item">
+      			<a class="logotypes-item" href="#">
+      				<img class="logotype" src="http://placehold.it/150x100" width="1" height="1"  alt="logo2">
+      			</a>
+          </li>
+          <li class="partners-logotypes-item">
+      			<a class="logotypes-item" href="#">
+      				<img class="logotype" src="http://placehold.it/150x100" width="1" height="1"  alt="logo3">
+      			</a>
+          </li>
+          <li class="partners-logotypes-item">
+      			<a class="logotypes-item" href="#">
+      				<img class="logotype" src="http://placehold.it/150x100" width="1" height="1"  alt="logo4">
+      			</a>
+          </li>
+        </ul>
   		</section>
 
-  		<section class="info">
+  		<section class="about-company">
   			<h2>О Нас</h2>
   			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
   			<p>Мы можем доставить товар в самые отдаленные точки России! DEVICE работает со многими траспортными компаниями:</p>
-  			<ul class="partners-list">
+  			<ul class="company-partners-list">
   				<li>Деловые Линии</li>
   				<li>Автотрейдинг</li>
   				<li>ЖелДорЭкспедиция</li>
   			</ul>
   			<a class="button button-main" href="#">Подробнее о нас</a>  			
-  		</section>
-
-  		<section class="contact">
   			<h2>Контакты</h2>
   			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
   			<!--Карта-->
-        <img class="map-address" src="#" width="1" height="1" alt="Карта офиса по адресу улица Строителей, 15">
+        <img class="map-address" src="http://placehold.it/150x100" width="1" height="1" alt="Карта офиса по адресу улица Строителей, 15">
   			<span class="button button-main">Напишите нам<!--Всплывающее окно с формами--></span>
   		</section>
   	</main>
 
   	<footer class="main-footer">
   		<a class="main-footer-logo" href="index.html">
-  			<img class="footer-logo" src="#" width="1" height="1" alt="Логотип DEVICE">
+  			<img class="footer-logo" src="http://placehold.it/150x100" width="1" height="1" alt="Логотип DEVICE">
   		</a>
   		<a class="catalog-menu-item footer-menu-item" href="#">Войти</a>
   		<a class="catalog-menu-item footer-menu-item" href="#">Сравнить</a>
@@ -168,12 +168,12 @@
   			<li><a class="site-navigation-item footer-navigation-item" href="#">Гарантия</a></li>
   			<li><a class="site-navigation-item footer-navigation-item" href="#">Контакты</a></li>
   		</ul>
-  		<a href="tel:+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
+  		<a href="tel:+7495495-95-95">Тел.: +7 (495) 495-95-95</a>
   		<div class="footer-social">
   			<ul>
   				<li><a class="social-button social-button-facebook" href="#">facebook</a></li>
   				<li><a class="social-button social-button-instagram" href="#">instagram</a></li>
-  				<li><a hclass="social-button social-button-twitter" ref="#">twitter</a></li>
+  				<li><a class="social-button social-button-twitter" href="#">twitter</a></li>
   			</ul>
   		</div>
   		<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
