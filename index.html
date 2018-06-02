@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница | Интернет-магазин «DEVICE»</title>
+    <title>Главная страница | Интернет-магазин &laquoDEVICE&raquo</title>
   </head>
   <body>
   	<header class="main-header">
@@ -10,9 +10,11 @@
   			<img src="http://placehold.it/150x100" width="1" height="1" alt="Логотип Девайс">
   		</a>
   		<p>Поиск по сайту<!--форма--></p>
-  		<a class="catalog-menu-item" href="#">Войти</a>
-  		<a class="catalog-menu-item" href="#">Сравнить</a>
-  		<a class="catalog-menu-item" href="#">Корзина</a>
+      <ul class="user-navigation">
+        <li><a class="catalog-menu-item" href="#">Войти</a></li>
+  		  <li><a class="catalog-menu-item" href="#">Сравнить</a></li>
+  		  <li><a class="catalog-menu-item" href="#">Корзина</a></li>
+      </ul>
   		<nav class="main-navigation">
   			<ul class="site-navigation">
   				<li><a class="site-navigation-item" href="#">Каталог товаров</a><span>+<!--выпадающее подменю--></span>
@@ -33,20 +35,20 @@
   	</header>
 
   	<main class="container">
-  		<h1 class="visually-hidden">Интернет магазин device</h1>
+  		<h1 class="visually-hidden">Интернет магазин Device</h1>
   		
-  		<section class="slides promo">
-  			<ul class="slide">
-          <li class="promo-slide">
+  		<section class="promo-slider">
+  			<ul class="slider-list">
+          <li class="slider-item">
   	  			<img src="http://placehold.it/150x100" width="1" height="1" alt="Селфи палка">
-  	  			<p><b>Делай селфи, как Бен Стиллер!</b></p>
+  	  			<p>Делай селфи, как Бен Стиллер!</p>
   	  			<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
   	  			<a class="button button-main" href="#">Подробнее</a>
   	  			<table class="slide-info">
   	  				<tr>
-  	  					<td>8,5 м</td><!--Добавить сюда класс, чтобы затем стилизовать по классу, или как то иначе-->
-  	  					<td>5 кг</td>
-  	  					<td>Карбон</td>
+  	  					<td class="slide-info-item">8,5 м</td>
+  	  					<td class="slide-info-item">5 кг</td>
+  	  					<td class="slide-info-item">Карбон</td>
   	  				</tr>
   	  				<tr>
   	  					<td>Длина палки</td>
@@ -55,29 +57,29 @@
         		</tr>
   	  			</table>
           </li>
-          <li class="promo-slide">
+          <li class="slider-item">
     				<img src="http://placehold.it/150x100" width="1" height="1" alt="Фитнес-браслет">
-    				<p><b>Худеем правильно!</b></p>
+    				<p>Худеем правильно!</p>
     				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
     				<a class="button button-main" href="#">Подробнее</a>
   	  			<table class="slide-info">
   	  				<tr>
-  	  					<td>48 часов</td>
+  	  					<td class="slide-info-item">48 часов</td>
   	  				</tr>
   	  				<tr>
   	  					<td>Без подзарядки</td>
   	  				</tr>
   	  			</table>
           </li>
-          <li class="promo-slide">
+          <li class="slider-item">
     				<img src="http://placehold.it/150x100"  width="1" height="1" alt="Квадрокоптер">
-    				<p><b>Порхает как бабочка, жалит как пчела!</b></p>
+    				<p>Порхает как бабочка, жалит как пчела!</p>
     				<p>Этот обычный на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
     				<a class="button button-main" href="#" >Подробнее</a>
   	  			<table class="slide-info">
   	  				<tr>
-  	  					<td>800 м</td>
-  	  					<td>50 м</td>
+  	  					<td class="slide-info-item">800 м</td>
+  	  					<td class="slide-info-item">50 м</td>
   	  				</tr>
   	  				<tr>
   	  					<td>Дальность полета</td>
@@ -104,13 +106,21 @@
   			<span class="button services-button">Доставка</span>
   			<span class="button services-button">Гарантия</span>
   			<span class="button services-button">Кредит</span>
-  			<h2>Доставка</h2>
-  			<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом конечно же.</p>
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка разумеется.</p>
-  		</section>
+        <ul class="services-slider-list">
+          <li>
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li>
+            <h2>Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом конечно же.</p>
+          </li>
+          <li>
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка разумеется.</p>
+          </li> 
+        </ul>
+      </section>
 
   		<section class="brands">
         <ul class="brands-list">
@@ -138,20 +148,24 @@
   		</section>
 
   		<section class="about-company">
-  			<h2>О Нас</h2>
-  			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-  			<p>Мы можем доставить товар в самые отдаленные точки России! DEVICE работает со многими траспортными компаниями:</p>
-  			<ul class="company-partners-list">
-  				<li>Деловые Линии</li>
-  				<li>Автотрейдинг</li>
-  				<li>ЖелДорЭкспедиция</li>
-  			</ul>
-  			<a class="button button-main" href="#">Подробнее о нас</a>  			
-  			<h2>Контакты</h2>
-  			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  			<!--Карта-->
-        <img src="http://placehold.it/150x100" width="1" height="1" alt="Карта офиса по адресу улица Строителей, 15">
-  			<span class="button button-main">Напишите нам<!--Всплывающее окно с формами--></span>
+        <section class="about-us">
+    			<h2>О Нас</h2>
+    			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+    			<p>Мы можем доставить товар в самые отдаленные точки России! DEVICE работает со многими траспортными компаниями:</p>
+    			<ul class="about-us-list">
+    				<li>Деловые Линии</li>
+    				<li>Автотрейдинг</li>
+    				<li>ЖелДорЭкспедиция</li>
+    			</ul>
+    			<a class="button button-main" href="#">Подробнее о нас</a>
+        </section>
+        <section class="our-contacts">			
+    			<h2>Контакты</h2>
+    			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <!--Карта-->
+          <img src="http://placehold.it/150x100" width="1" height="1" alt="Карта офиса по адресу улица Строителей, 15">
+    			<span class="button button-main">Напишите нам<!--Всплывающее окно с формами--></span>
+        </section>
   		</section>
   	</main>
 
@@ -159,9 +173,11 @@
   		<a class="main-footer-logo" href="index.html">
   			<img src="http://placehold.it/150x100" width="1" height="1" alt="Логотип DEVICE">
   		</a>
-  		<a class="catalog-menu-item footer-menu-item" href="#">Войти</a>
-  		<a class="catalog-menu-item footer-menu-item" href="#">Сравнить</a>
-  		<a class="catalog-menu-item footer-menu-item" href="#">Корзина</a>
+      <ul class="footer-user-navigation">
+        <li><a class="catalog-menu-item footer-menu-item" href="#">Войти</a></li>
+  		  <li><a class="catalog-menu-item footer-menu-item" href="#">Сравнить</a></li>
+  		  <li><a class="catalog-menu-item footer-menu-item" href="#">Корзина</a></li>
+      </ul>
   		<address>г.Москва, ул. Строителей, 15</address>
   		<ul class="catalog-menu-footer">
   			<li><a class="site-navigation-item footer-navigation-item" href="#">Доставка</a></li>

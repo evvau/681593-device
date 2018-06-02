@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог | Интернет-магазин «DEVICE»</title>
+    <title>Каталог | Интернет-магазин &laquoDEVICE&raquo</title>
   </head>
   <body>
   	<header class="main-header">
@@ -10,20 +10,22 @@
   			<img src="http://placehold.it/150x100" width="1" height="1" alt="Логотип Девайс">
   		</a>
   		<p>Поиск по сайту<!--форма--></p>
-  		<a class="catalog-menu-item profile-link" href="profile">Валентин Петухов></a>
-  		<a class="catalog-menu-item" href="#">Выйти</a>
-  		<a class="catalog-menu-item" href="#">Сравнить</a>
-  		<a class="catalog-menu-item" href="#">Корзина</a>
+  		<ul class="user-navigation">
+  			<li><a class="catalog-menu-item profile-link" href="profile">Валентин Петухов></a></li>
+	  		<li><a class="catalog-menu-item" href="#">Выйти</a></li>
+	  		<li><a class="catalog-menu-item" href="#">Сравнить</a></li>
+	  		<li><a class="catalog-menu-item" href="#">Корзина</a></li>
+  		</ul>
   		<nav class="main-navigation">
   			<ul class="site-navigation">
-  				<li><a class="site-navigation-item" href="#">Каталог товаров</a><span>+<!--выпадающее подменю--></span>
+  				<li><a class="site-navigation-item" href="#">Каталог товаров</a><span>+</span>
   					<ul class="catalog-menu">
-  						<li><a class="catalog-menu-item video-gadgets" href="#">Виртуальная реальность</a></li>
-  						<li><a class="catalog-menu-item video-gadgets" href="#">Моноподы для селфи</a></li>
-  						<li><a class="catalog-menu-item video-gadgets" href="#">Экшн-камеры</a></li>
-  						<li><a class="catalog-menu-item hand-gadgets" href="#">Фитнес-браслеты</a></li>
-  						<li><a class="catalog-menu-item hand-gadgets" href="#">Умные часы</a></li>
-  						<li><a class="catalog-menu-item other" href="#">Квадрокоптеры</a></li>
+  						<li><a class="catalog-menu-item" href="#">Виртуальная реальность</a></li>
+  						<li><a class="catalog-menu-item" href="#">Моноподы для селфи</a></li>
+  						<li><a class="catalog-menu-item" href="#">Экшн-камеры</a></li>
+  						<li><a class="catalog-menu-item" href="#">Фитнес-браслеты</a></li>
+  						<li><a class="catalog-menu-item" href="#">Умные часы</a></li>
+  						<li><a class="catalog-menu-item" href="#">Квадрокоптеры</a></li>
   					</ul>
   				</li>
   				<li><a class="site-navigation-item" href="#">Доставка</a></li>
@@ -41,7 +43,6 @@
   			<li><a class="breadcrumbs-item" href="catalog.html">Каталог товаров</a></li>
   			<li class="breadcrumbs-item-current">Моноподы для селфи</li>
   		</ol>
-  			
 
   		<section class="filters">
   			<h2 class="visually-hidden">Фильтр товаров</h2>
@@ -59,6 +60,12 @@
   				<li>
   					<a class="sorting-item" href="#">По популярности</a>
   				</li>
+  				<li>
+  					<a class="sorting-item" href="#">▲</a>
+  				</li>
+  				<li>
+  					<a class="sorting-item" href="#">▼</a>
+  				</li>
   			</ul>
   		</section>
 
@@ -67,7 +74,7 @@
   			<ul class="catalog-list">
   				<li class="catalog-item">
   					<h3><a href="#">Любительская селфи-палка</a></h3>
-  					<p class="price">500 руб.</p>
+  					<p class="catalog-price">500 руб.</p>
   					<p class="catalog-item-image">
   						<a href="#">
   							<img src="http://placehold.it/150x100" width="1" height="1" alt="Любительская селфи-палка">
@@ -80,7 +87,7 @@
   				</li>
   				<li class="catalog-item">
   					<h3><a href="#">Профессиональная селфи-палка</a></h3>
-  					<p class="price">1 500 руб.</p>
+  					<p class="catalog-price">1 500 руб.</p>
   					<p class="catalog-item-image">
   						<a href="#">
   							<img src="http://placehold.it/150x100" width="1" height="1" alt="Профессиональная селфи-палка">
@@ -93,7 +100,7 @@
   				</li>
   				<li class="catalog-item">
   					<h3><a href="#">Непотопляемая селфи-палка</a></h3>
-  					<p class="price">2 500 руб.</p>
+  					<p class="catalog-price">2 500 руб.</p>
   					<p class="catalog-item-image">
   						<a href="#">
   							<img src="http://placehold.it/150x100" width="1" height="1" alt="Непотопляемая селфи-палка">
@@ -105,8 +112,8 @@
   					</div>
   				</li>
   				<li class="catalog-item">
-  					<h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
-  					<p class="price">4 900 руб.</p>
+  					<h3><a href="#">Селфи-палка &laquoСледуй за мной&raquo</a></h3>
+  					<p class="catalog-price">4 900 руб.</p>
   					<p class="catalog-item-image">
   						<a href="#">
   							<img src="http://placehold.it/150x100" width="1" height="1" alt="Селфи-палка «Следуй за мной»">
@@ -132,10 +139,12 @@
   		<a class="main-footer-logo" href="index.html">
   			<img src="http://placehold.it/150x100" width="1" height="1" alt="Логотип DEVICE">
   		</a>
-  		<a class="catalog-menu-item footer-menu-item profile-link" href="profile" >Валентин Петухов</a>
-  		<a class="catalog-menu-item footer-menu-item" href="#">Выйти</a>
-  		<a class="catalog-menu-item footer-menu-item" href="#">Сравнить</a>
-  		<a class="catalog-menu-item footer-menu-item" href="#">Корзина</a>
+  		<ul class="footer-user-navigation">
+  			<li><a class="catalog-menu-item footer-menu-item profile-link" href="profile" >Валентин Петухов</a></li>
+  			<li><a class="catalog-menu-item footer-menu-item" href="#">Выйти</a></li>
+  			<li><a class="catalog-menu-item footer-menu-item" href="#">Сравнить</a></li>
+  			<li><a class="catalog-menu-item footer-menu-item" href="#">Корзина</a></li>
+  		</ul>
   		<address>г.Москва, ул. Строителей, 15</address>
   		<ul class="catalog-menu-footer">
   			<li><a class="site-navigation-item footer-navigation-item" href="#">Доставка</a></li>
