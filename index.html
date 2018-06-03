@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница | Интернет-магазин &laquoDEVICE&raquo</title>
+    <title>Интернет-магазин &laquo;DEVICE&raquo;</title>
   </head>
   <body>
   	<header class="main-header">
-  		<a class="main-header-logo" href="#">
+  		<a class="main-header-logo" href="index.html">
   			<img src="http://placehold.it/150x100" width="1" height="1" alt="Логотип Девайс">
   		</a>
   		<p>Поиск по сайту<!--форма--></p>
@@ -41,14 +41,14 @@
   			<ul class="slider-list">
           <li class="slider-item">
   	  			<img src="http://placehold.it/150x100" width="1" height="1" alt="Селфи палка">
-  	  			<p>Делай селфи, как Бен Стиллер!</p>
+  	  			<p class="slider-title">Делай селфи, как Бен Стиллер!</p>
   	  			<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
   	  			<a class="button button-main" href="#">Подробнее</a>
-  	  			<table class="slide-info">
+  	  			<table class="slide-table">
   	  				<tr>
-  	  					<td class="slide-info-item">8,5 м</td>
-  	  					<td class="slide-info-item">5 кг</td>
-  	  					<td class="slide-info-item">Карбон</td>
+  	  					<td class="slide-table-value">8,5 м</td>
+  	  					<td class="slide-table-value">5 кг</td>
+  	  					<td class="slide-table-value">Карбон</td>
   	  				</tr>
   	  				<tr>
   	  					<td>Длина палки</td>
@@ -59,12 +59,12 @@
           </li>
           <li class="slider-item">
     				<img src="http://placehold.it/150x100" width="1" height="1" alt="Фитнес-браслет">
-    				<p>Худеем правильно!</p>
+    				<p class="slider-title">Худеем правильно!</p>
     				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
     				<a class="button button-main" href="#">Подробнее</a>
-  	  			<table class="slide-info">
+  	  			<table class="slide-table">
   	  				<tr>
-  	  					<td class="slide-info-item">48 часов</td>
+  	  					<td class="slide-table-value">48 часов</td>
   	  				</tr>
   	  				<tr>
   	  					<td>Без подзарядки</td>
@@ -73,13 +73,13 @@
           </li>
           <li class="slider-item">
     				<img src="http://placehold.it/150x100"  width="1" height="1" alt="Квадрокоптер">
-    				<p>Порхает как бабочка, жалит как пчела!</p>
+    				<p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
     				<p>Этот обычный на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
     				<a class="button button-main" href="#" >Подробнее</a>
-  	  			<table class="slide-info">
+  	  			<table class="slide-table">
   	  				<tr>
-  	  					<td class="slide-info-item">800 м</td>
-  	  					<td class="slide-info-item">50 м</td>
+  	  					<td class="slide-table-value">800 м</td>
+  	  					<td class="slide-table-value">50 м</td>
   	  				</tr>
   	  				<tr>
   	  					<td>Дальность полета</td>
@@ -91,13 +91,14 @@
   		</section>
 
   		<section class="popular">
+        <h2 class="visually-hidden">Популярные товары</h2>
   			<ul class="popular-list">
-  				<li><a class="popular-item" href="#">Виртуальная реальность</a></li>
-  				<li><a class="popular-item" href="#">Моноподы для селфи</a></li>
-  				<li><a class="popular-item" href="#">Экшн-камеры</a></li>
-  				<li><a class="popular-item" href="#">Фитнес-браслеты</a></li>
-  				<li><a class="popular-item" href="#">Умные часы</a></li>
-  				<li><a class="popular-item" href="#">Квадракоптеры</a></li>
+  				<li class="popular-item"><a class="popular-link" href="#">Виртуальная реальность</a></li>
+  				<li class="popular-item"><a class="popular-link" href="#">Моноподы для селфи</a></li>
+  				<li class="popular-item"><a class="popular-link" href="#">Экшн-камеры</a></li>
+  				<li class="popular-item"><a class="popular-link" href="#">Фитнес-браслеты</a></li>
+  				<li class="popular-item"><a class="popular-link" href="#">Умные часы</a></li>
+  				<li class="popular-item"><a class="popular-link" href="#">Квадракоптеры</a></li>
   			</ul>
   		</section>
 
@@ -185,13 +186,11 @@
   			<li><a class="site-navigation-item footer-navigation-item" href="#">Контакты</a></li>
   		</ul>
   		<a href="tel:+7495495-95-95">Тел.: +7 (495) 495-95-95</a>
-  		<div class="footer-social">
-  			<ul>
+  			<ul class="our-social">
   				<li><a class="social-button social-button-facebook" href="#">facebook</a></li>
   				<li><a class="social-button social-button-instagram" href="#">instagram</a></li>
   				<li><a class="social-button social-button-twitter" href="#">twitter</a></li>
   			</ul>
-  		</div>
   		<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   	</footer>
 

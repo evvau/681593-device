@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог | Интернет-магазин &laquoDEVICE&raquo</title>
+    <title>Каталог | Интернет-магазин &laquo;DEVICE&raquo;</title>
   </head>
   <body>
   	<header class="main-header">
@@ -39,8 +39,8 @@
   		<h1 class="visually-hidden">Моноподы для селфи</h1>
 
   		<ol class="breadcrumbs">
-  			<li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
-  			<li><a class="breadcrumbs-item" href="catalog.html">Каталог товаров</a></li>
+  			<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+  			<li class="breadcrumbs-item"><a href="catalog.html">Каталог товаров</a></li>
   			<li class="breadcrumbs-item-current">Моноподы для селфи</li>
   		</ol>
 
@@ -50,23 +50,26 @@
   			<!--форма-->
   			<span class="button button-main">Показать</span><!--Отправка формы-->
   			<h3>Сортировка:</h3>
-  			<ul class="filters-sorting-list">
-  				<li>
-  					<a class="sorting-item" href="#">По цене</a>
+  			<ul class="sorting-category-list">
+  				<li class="sorting-category-item">
+  					<a class="sorting-link" href="#">По цене</a>
   				</li>
-  				<li>
-  					<a class="sorting-item" href="#">По типу</a>
+  				<li class="sorting-category-item">
+  					<a class="sorting-link" href="#">По типу</a>
   				</li>
-  				<li>
-  					<a class="sorting-item" href="#">По популярности</a>
-  				</li>
-  				<li>
-  					<a class="sorting-item" href="#">▲</a>
-  				</li>
-  				<li>
-  					<a class="sorting-item" href="#">▼</a>
+  				<li class="sorting-category-item">
+  					<a class="sorting-link" href="#">По популярности</a>
   				</li>
   			</ul>
+  			<ul class="sorting-priority-list">
+  				<li class="sorting-priority-item">
+  					<a class="sorting-link" href="#">▲</a>
+  				</li>
+  				<li class="sorting-priority-item">
+  					<a class="sorting-link" href="#">▼</a>
+  				</li>
+  			</ul>
+  			
   		</section>
 
   		<section class="catalog">
@@ -112,7 +115,7 @@
   					</div>
   				</li>
   				<li class="catalog-item">
-  					<h3><a href="#">Селфи-палка &laquoСледуй за мной&raquo</a></h3>
+  					<h3><a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a></h3>
   					<p class="catalog-price">4 900 руб.</p>
   					<p class="catalog-item-image">
   						<a href="#">
@@ -126,11 +129,11 @@
   				</li>
   			</ul>
   			<ul class="pagination-list">
-  				<li class="pagination-item"><a class="pagination-item-link" href="#">Назад</a></li>
-  				<li class="pagination-item"><a class="pagination-item-link" href="#">1</a></li>
-  				<li class="pagination-item"><a class="pagination-item-link" href="#">2</a></li>
-  				<li class="pagination-item"><a class="pagination-item-link" href="#">3</a></li>
-  				<li class="pagination-item"><a class="pagination-item-link" href="#">Вперед</a></li>  				
+  				<li class="pagination-item"><a class="pagination-link" href="#">Назад</a></li>
+  				<li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+  				<li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+  				<li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+  				<li class="pagination-item"><a class="pagination-link" href="#">Вперед</a></li>  				
   			</ul>
   		</section>
   	</main>
@@ -152,13 +155,11 @@
   			<li><a class="site-navigation-item footer-navigation-item" href="#">Контакты</a></li>
   		</ul>
   		<a href="tel:+7495495-95-95">Тел.: +7 (495) 495-95-95</a>
-  		<div class="footer-social">
-  			<ul>
+  			<ul class="our-social">
   				<li><a class="social-button social-button-facebook" href="#">facebook</a></li>
   				<li><a class="social-button social-button-instagram" href="#">instagram</a></li>
   				<li><a class="social-button social-button-twitter" href="#">twitter</a></li>
   			</ul>
-  		</div>
   		<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
   	</footer>
   </body>
