@@ -7,9 +7,12 @@
 	<body>
 		<header class="main-header">
 			<a class="main-header-logo">
-				<img src="img/logo.png" width="164" height="36" alt="Логотип DEVICE">
+				<img src="img/logo.png" width="164" height="36" alt="Логотип интрнет-магазина DEVICE">
 			</a>
-			<p>Поиск по сайту<!--форма--></p>
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<label for="site-search"><!--search.svg--></label>
+				<input type="search" name="site-search" placeholder="Поиск по сайту">
+			</form>
 			<ul class="user-navigation">
 				<li class="user-navigation-item"><a class="user-navigation-link" href="#">Войти</a></li>
 				<li class="user-navigation-item"><a class="user-navigation-link" href="#">Сравнить</a></li>
@@ -101,10 +104,9 @@
 			</section>
 			<section class="services">
 				<h2 class="visually-hidden">Услуги</h2>
-				<!--слайдер-->
-				<span class="button button-services">Доставка</span>
-				<span class="button button-services">Гарантия</span>
-				<span class="button button-services">Кредит</span>
+				<button class="button button-services" type="button">Доставка</button>
+				<button class="button button-services" type="button">Гарантия</button>
+				<button class="button button-services" type="button">Кредит</button>
 				<ul class="services-slider-list">
 					<li>
 						<h2>Доставка</h2>
@@ -163,7 +165,7 @@
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<!--Карта-->
 					<img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-					<span class="button button-about-us">Напишите нам<!--Всплывающее окно с формами--></span>
+					<button class="button button-about-us" type="button">Напишите нам</button>
 				</section>
 			</section>
 		</main>
@@ -189,25 +191,25 @@
 				<li><a class="social-button social-button-instagram" href="#">instagram</a></li>
 				<li><a class="social-button social-button-twitter" href="#">twitter</a></li>
 			</ul>
-			<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+			<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
 		</footer>
 
 		<section class="popup feedback">
-			<h3>Ваше имя:</h3>
-			<!--форма-->
-			<span>x</span>
-			<h3>Ваш e-mail:</h3>
-			<!--форма-->
-			<span>x</span>
-			<h3>Текст письма:</h3>
-			<!--форма-->
-			<span>x</span>
-			<span class="button button-feedback">Отправить</span>
-			<span class="button-close">Зыкрыть окно</span>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<label for="login-field">Ваше имя:</label>
+				<input type="text" id="login-field" name="login" placeholder="Имя Фамилия">
+				<label for="email-field">Ваш e-mail:</label>
+				<input type="email" id="email-field" name="email" placeholder="email@example.com">
+				<label for="comment-field">Текст письма:</label>
+				<textarea id="comment-field" name="comment" placeholder="В свободной форме"></textarea>
+				<button class="button button-feedback" type="submit">Отправить</button>
+				<button class="button-close" type="button"><span class="visually-hidden">Зыкрыть окно</span></button>
+			</form>
 		</section>
 		<section class="popup map">
+			<!--что делать с картой сейчас?-->
 			<span class="address">map</span>
-			<span class="button-close">Зыкрыть окно</span>
+			<button class="button-close"><span class="visually-hidden">Зыкрыть окно</span></button>
 		</section>
 	</body>
 </html>
