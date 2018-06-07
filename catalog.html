@@ -9,7 +9,10 @@
 			<a class="main-header-logo" href="index.html">
 				<img src="img/logo.png" width="164" height="36" alt="Логотип DEVICE">
 			</a>
-			<p>Поиск по сайту<!--форма--></p>
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<label for="site-search"><!--search.svg--></label>
+				<input type="search" name="site-search" placeholder="Поиск по сайту">
+			</form>
 			<ul class="user-navigation">
 				<li class="user-navigation-item"><a class="user-navigation-link profile-link" href="profile">Валентин Петухов></a></li>
 				<li class="user-navigation-item"><a class="user-navigation-link" href="#">Выйти</a></li>
@@ -45,8 +48,50 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<h3>Фильтр:</h3>
-				<!--форма-->
-				<span class="button button-filters">Показать</span><!--Отправка формы-->
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<label for="price-range-field">Стоимость</label>
+					<input type="range" id="price-range-field" name="price-range" step="1">
+					<p class="price-hint">от 0 до 5000</p>
+					<fieldset>
+						<legend>Цвет</legend>
+						<ul class="filter-color-list">
+							<li>
+								<input type="checkbox" id="filter-color-black" name="black" checked>
+								<label for="filter-color-black">Черный</label>
+							</li>
+							<li>
+								<input type="checkbox" id="filter-color-white" name="white">
+								<label for="filter-color-white">Белый</label>
+							</li>
+							<li>
+								<input type="checkbox" id="filter-color-blue" name="blue" checked>
+								<label for="filter-color-blue">Синий</label>
+							</li>
+							<li>
+								<input type="checkbox" id="filter-color-red" name="red" checked>
+								<label for="filter-color-red">Красный</label>
+							</li>
+							<li>
+								<input type="checkbox" id="filter-color-pink" name="pink">
+								<label for="filter-color-pink">Розовый</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Bluetooth</legend>
+						<ul class="filter-bluetooth-list">
+							<li>
+								<input type="radio" name="bluetooth" id="filter-have-bluetooth" checked>
+								<label for="filter-have-bluetooth">Есть</label>
+							</li>
+							<li>
+								<input type="radio" name="bluetooth" id="filter-dont-have-bluetooth">
+								<label for="filter-dont-have-bluetooth">Нет</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="button button-filters" type="submit">Показать</button>
+				</form>
 				<h3>Сортировка:</h3>
 				<ul class="sorting-category-list">
 					<li class="sorting-category-item">
@@ -80,8 +125,9 @@
 							</a>
 						</p>
 						<div class="hover-catalog-item">
-							<span class="button button-catalog">В корзину</span>
-							<span class="button-compare">Добавить к сравнению</span>
+							<!--нужна здесь форма или взаимодействие через js?-->
+							<button class="button button-catalog">В корзину</button>
+							<button class="button-compare">Добавить к сравнению</button>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -93,8 +139,8 @@
 							</a>
 						</p>
 						<div class="hover-catalog-item">
-							<span class="button button-catalog">В корзину</span>
-							<span class="button-compare">Добавить к сравнению</span>
+							<button class="button button-catalog">В корзину</button>
+							<button class="button-compare">Добавить к сравнению</button>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -106,8 +152,8 @@
 							</a>
 						</p>
 						<div class="hover-catalog-item">
-							<span class="button button-catalog">В корзину</span>
-							<span class="button-compare">Добавить к сравнению</span>
+							<button class="button button-catalog">В корзину</button>
+							<button class="button-compare">Добавить к сравнению</button>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -119,8 +165,8 @@
 							</a>
 						</p>
 						<div class="hover-catalog-item">
-							<span class="button button-catalog">В корзину</span>
-							<span class="button-compare">Добавить к сравнению</span>
+							<button class="button button-catalog">В корзину</button>
+							<button class="button-compare">Добавить к сравнению</button>
 						</div>
 					</li>
 				</ul>
@@ -156,7 +202,7 @@
 				<li><a class="social-button social-button-instagram" href="#">instagram</a></li>
 				<li><a class="social-button social-button-twitter" href="#">twitter</a></li>
 			</ul>
-			<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+			<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
 		</footer>
 	</body>
 </html>
