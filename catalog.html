@@ -9,7 +9,7 @@
 			<a class="main-header-logo" href="index.html">
 				<img src="img/logo.png" width="164" height="36" alt="Логотип интернет-магазина DEVICE">
 			</a>
-			<form action="https://echo.htmlacademy.ru" method="get">
+			<form class="header-form" action="https://echo.htmlacademy.ru" method="get">
 				<label for="site-search"><!--search.svg--><span class="visually-hidden">Поиск по сайту</span></label>
 				<input type="search" name="site-search" placeholder="Поиск по сайту">
 			</form>
@@ -49,9 +49,11 @@
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<h3>Фильтр:</h3>
 				<form action="https://echo.htmlacademy.ru" method="get">
-					<label for="price-range-field">Стоимость</label>
-					<input type="range" id="price-range-field" name="price-range" step="1">
-					<p class="price-hint">от 0 до 5000</p>
+					<fieldset>
+						<label for="price-range-field">Стоимость</label>
+						<input type="range" id="price-range-field" name="price-range" step="1">
+						<p class="price-hint">от 0 до 5000</p>
+					</fieldset>
 					<fieldset>
 						<legend>Цвет</legend>
 						<ul class="filter-color-list">
@@ -81,11 +83,11 @@
 						<legend>Bluetooth</legend>
 						<ul class="filter-bluetooth-list">
 							<li>
-								<input type="radio" name="bluetooth" id="filter-have-bluetooth" value="have" checked>
+								<input type="radio" name="bluetooth" id="filter-have-bluetooth" value="yes" checked>
 								<label for="filter-have-bluetooth">Есть</label>
 							</li>
 							<li>
-								<input type="radio" name="bluetooth" id="filter-dont-have-bluetooth" value="dont-have">
+								<input type="radio" name="bluetooth" id="filter-dont-have-bluetooth" value="no">
 								<label for="filter-dont-have-bluetooth">Нет</label>
 							</li>
 						</ul>
@@ -126,8 +128,8 @@
 						</p>
 						<div class="hover-catalog-item">
 							<!--нужна здесь форма или взаимодействие через js?-->
-							<button class="button button-catalog">В корзину</button>
-							<button class="button-compare">Добавить к сравнению</button>
+							<a class="button button-catalog" href="#">В корзину</a>
+							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -139,8 +141,8 @@
 							</a>
 						</p>
 						<div class="hover-catalog-item">
-							<button class="button button-catalog">В корзину</button>
-							<button class="button-compare">Добавить к сравнению</button>
+							<a class="button button-catalog" href="#">В корзину</a>
+							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -152,8 +154,8 @@
 							</a>
 						</p>
 						<div class="hover-catalog-item">
-							<button class="button button-catalog">В корзину</button>
-							<button class="button-compare">Добавить к сравнению</button>
+							<a class="button button-catalog" href="#">В корзину</a>
+							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
 					</li>
 					<li class="catalog-item">
@@ -165,8 +167,8 @@
 							</a>
 						</p>
 						<div class="hover-catalog-item">
-							<button class="button button-catalog">В корзину</button>
-							<button class="button-compare">Добавить к сравнению</button>
+							<a class="button button-catalog" href="#">В корзину</a>
+							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
 					</li>
 				</ul>
@@ -198,9 +200,9 @@
 			</ul>
 			<a href="tel:+7495495-95-95">Тел.: +7 (495) 495-95-95</a>
 			<ul class="our-social">
-				<li><a class="social-button social-button-facebook" href="#">facebook</a></li>
-				<li><a class="social-button social-button-instagram" href="#">instagram</a></li>
-				<li><a class="social-button social-button-twitter" href="#">twitter</a></li>
+				<li><a class="social-button social-button-facebook" href="#"><<span class="visually-hidden">facebook</span></a></li>
+				<li><a class="social-button social-button-instagram" href="#"><span class="visually-hidden">instagram</span></a></li>
+				<li><a class="social-button social-button-twitter" href="#"><span class="visually-hidden">twitter</span></a></li>
 			</ul>
 			<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
 		</footer>

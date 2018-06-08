@@ -9,7 +9,7 @@
 			<a class="main-header-logo">
 				<img src="img/logo.png" width="164" height="36" alt="Логотип интрнет-магазина DEVICE">
 			</a>
-			<form action="https://echo.htmlacademy.ru" method="get">
+			<form class="header-form" action="https://echo.htmlacademy.ru" method="get">
 				<label for="site-search"><!--search.svg--><span class="visually-hidden">Поиск по сайту</span></label>
 				<input type="search" name="site-search" placeholder="Поиск по сайту">
 			</form>
@@ -104,9 +104,17 @@
 			</section>
 			<section class="services">
 				<h2 class="visually-hidden">Услуги</h2>
-				<button class="button button-services" type="button">Доставка</button>
-				<button class="button button-services" type="button">Гарантия</button>
-				<button class="button button-services" type="button">Кредит</button>
+				<ul class="services-slider-button-list">
+					<li>
+						<button class="button button-services" type="button">Доставка</button>
+					</li>
+					<li>
+						<button class="button button-services" type="button">Гарантия</button>
+					</li>
+					<li>
+						<button class="button button-services" type="button">Кредит</button>
+					</li>
+				</ul>
 				<ul class="services-slider-list">
 					<li>
 						<h2>Доставка</h2>
@@ -187,28 +195,31 @@
 			</ul>
 			<a href="tel:+7495495-95-95">Тел.: +7 (495) 495-95-95</a>
 			<ul class="our-social">
-				<li><a class="social-button social-button-facebook" href="#">facebook</a></li>
-				<li><a class="social-button social-button-instagram" href="#">instagram</a></li>
-				<li><a class="social-button social-button-twitter" href="#">twitter</a></li>
+				<li><a class="social-button social-button-facebook" href="#"><span class="visually-hidden">facebook</span></a></li>
+				<li><a class="social-button social-button-instagram" href="#"><span class="visually-hidden">instagram</span></a></li>
+				<li><a class="social-button social-button-twitter" href="#"><span class="visually-hidden">twitter</span></a></li>
 			</ul>
 			<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
 		</footer>
 
 		<section class="popup feedback">
 			<form action="https://echo.htmlacademy.ru" method="post">
-				<label for="login-field">Ваше имя:</label>
-				<input type="text" id="login-field" name="login" placeholder="Имя Фамилия">
+				<button class="button-close" type="button"><span class="visually-hidden">Зыкрыть окно</span></button>
+				<div class="feedback-field">
+					<label for="login-field">Ваше имя:</label>
+					<input type="text" id="login-field" name="login" placeholder="Имя Фамилия">
+				</div>
+				<div class="feedback-field">
 				<label for="email-field">Ваш e-mail:</label>
-				<input type="email" id="email-field" name="email" placeholder="email@example.com">
-				<label for="comment-field">Текст письма:</label>
+					<input type="email" id="email-field" name="email" placeholder="email@example.com">
+					<label for="comment-field">Текст письма:</label>
+				</div>
 				<textarea id="comment-field" name="comment" placeholder="В свободной форме"></textarea>
 				<button class="button button-feedback" type="submit">Отправить</button>
-				<button class="button-close" type="button"><span class="visually-hidden">Зыкрыть окно</span></button>
 			</form>
 		</section>
 		<section class="popup map">
-			<!--что делать с картой сейчас?-->
-			<span class="address">map</span>
+			<img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
 			<button class="button-close"><span class="visually-hidden">Зыкрыть окно</span></button>
 		</section>
 	</body>
