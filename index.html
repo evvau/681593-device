@@ -7,9 +7,12 @@
 	<body>
 		<header class="main-header">
 			<a class="main-header-logo">
-				<img src="img/logo.png" width="164" height="36" alt="Логотип DEVICE">
+				<img src="img/logo.png" width="164" height="36" alt="Логотип интрнет-магазина DEVICE">
 			</a>
-			<p>Поиск по сайту<!--форма--></p>
+			<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+				<label for="site-search"><!--search.svg--><span class="visually-hidden">Поиск по сайту</span></label>
+				<input type="search" id="site-search" name="site-search" placeholder="Поиск по сайту">
+			</form>
 			<ul class="user-navigation">
 				<li class="user-navigation-item"><a class="user-navigation-link" href="#">Войти</a></li>
 				<li class="user-navigation-item"><a class="user-navigation-link" href="#">Сравнить</a></li>
@@ -37,6 +40,7 @@
 		<main class="container">
 			<h1 class="visually-hidden">Интернет магазин Device</h1>
 			<section class="promo-slider">
+				<h2 class="visually-hidden">Промо товары</h2>
 				<ul class="slider-list">
 					<li class="slider-item">
 						<img src="img/longest-selfie-stick.png" width="384" height="486" alt="Селфи палка">
@@ -71,7 +75,7 @@
 						</table>
 					</li>
 					<li class="slider-item">
-						<img src="img/qudrocopter.png"  width="526" height="334" alt="Квадрокоптер">
+						<img src="img/quadrocopter.png"  width="526" height="334" alt="Квадрокоптер">
 						<p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
 						<p>Этот обычный на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<a class="button button-promo" href="#" >Подробнее</a>
@@ -101,10 +105,17 @@
 			</section>
 			<section class="services">
 				<h2 class="visually-hidden">Услуги</h2>
-				<!--слайдер-->
-				<span class="button button-services">Доставка</span>
-				<span class="button button-services">Гарантия</span>
-				<span class="button button-services">Кредит</span>
+				<ul class="services-slider-button-list">
+					<li>
+						<button class="button button-services" type="button">Доставка</button>
+					</li>
+					<li>
+						<button class="button button-services" type="button">Гарантия</button>
+					</li>
+					<li>
+						<button class="button button-services" type="button">Кредит</button>
+					</li>
+				</ul>
 				<ul class="services-slider-list">
 					<li>
 						<h2>Доставка</h2>
@@ -163,7 +174,7 @@
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<!--Карта-->
 					<img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-					<span class="button button-about-us">Напишите нам<!--Всплывающее окно с формами--></span>
+					<a class="button button-about-us" href="#">Напишите нам</a>
 				</section>
 			</section>
 		</main>
@@ -185,29 +196,36 @@
 			</ul>
 			<a href="tel:+7495495-95-95">Тел.: +7 (495) 495-95-95</a>
 			<ul class="our-social">
-				<li><a class="social-button social-button-facebook" href="#">facebook</a></li>
-				<li><a class="social-button social-button-instagram" href="#">instagram</a></li>
-				<li><a class="social-button social-button-twitter" href="#">twitter</a></li>
+				<li><a class="social-button social-button-facebook" href="#"><span class="visually-hidden">facebook</span></a></li>
+				<li><a class="social-button social-button-instagram" href="#"><span class="visually-hidden">instagram</span></a></li>
+				<li><a class="social-button social-button-twitter" href="#"><span class="visually-hidden">twitter</span></a></li>
 			</ul>
-			<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+			<a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
 		</footer>
 
 		<section class="popup feedback">
-			<h3>Ваше имя:</h3>
-			<!--форма-->
-			<span>x</span>
-			<h3>Ваш e-mail:</h3>
-			<!--форма-->
-			<span>x</span>
-			<h3>Текст письма:</h3>
-			<!--форма-->
-			<span>x</span>
-			<span class="button button-feedback">Отправить</span>
-			<span class="button-close">Зыкрыть окно</span>
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<button class="button-close" type="button"><span class="visually-hidden">Зыкрыть окно</span></button>
+				<div class="feedback-field">
+					<label for="login-field">Ваше имя:</label>
+					<input type="text" id="login-field" name="login" placeholder="Имя Фамилия">
+				</div>
+				<div class="feedback-field">
+					<label for="email-field">Ваш e-mail:</label>
+					<input type="email" id="email-field" name="email" placeholder="email@example.com">
+				</div>
+				<div class="feedback-field">
+					<label for="comment-field">Текст письма:</label>
+					<textarea id="comment-field" name="comment" placeholder="В свободной форме"></textarea>
+				</div>
+				<button class="button button-feedback" type="submit">Отправить</button>
+			</form>
 		</section>
 		<section class="popup map">
-			<span class="address">map</span>
-			<span class="button-close">Зыкрыть окно</span>
+			<h2 class="visually-hidden">Карта с адрессом офиса</h2>
+			<img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+			<button class="button-close"><span class="visually-hidden">Зыкрыть окно</span></button>
 		</section>
 	</body>
 </html>
