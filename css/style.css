@@ -51,6 +51,12 @@ a {
 .button:active {
 	color: rgba(0,0,0,0.3);
 }
+
+.button-services:focus {
+	color: #f7e184;
+	/*width????*/
+	background-color: #000000;
+}
 /*popup*/
 .feedback {
 	font-family: "Open Sans", "Arial", sans-serif;
