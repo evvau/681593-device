@@ -43,7 +43,7 @@
 		</header>
 
 		<main class="container">
-			<h1 class="visually-hidden">Моноподы для селфи</h1>
+			<h1>Моноподы для селфи</h1>
 			<ol class="breadcrumbs">
 				<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
 				<li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
@@ -51,10 +51,10 @@
 			</ol>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<h3>Фильтр:</h3>
+				<h3 class="filter-title">Фильтр:</h3>
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<fieldset>
-						<label for="price-range-field">Стоимость</label>
+						<label for="price-range-field"><legend>Стоимость</legend></label>
 						<input type="range" id="price-range-field" name="price-range" step="1">
 						<p class="price-hint">от 0 до 5000</p>
 					</fieldset>
@@ -98,26 +98,28 @@
 					</fieldset>
 					<button class="button button-filters" type="submit">Показать</button>
 				</form>
-				<h3>Сортировка:</h3>
-				<ul class="sorting-category-list">
-					<li class="sorting-category-item">
-						<a class="sorting-link" href="#">По цене</a>
-					</li>
-					<li class="sorting-category-item">
-						<a class="sorting-link" href="#">По типу</a>
-					</li>
-					<li class="sorting-category-item">
-						<a class="sorting-link" href="#">По популярности</a>
-					</li>
-				</ul>
-				<ul class="sorting-priority-list">
-					<li class="sorting-priority-item">
-						<a class="sorting-link" href="#">▲</a>
-					</li>
-					<li class="sorting-priority-item">
-						<a class="sorting-link" href="#">▼</a>
-					</li>
-				</ul>
+				<div class="sorting-category">
+					<h3>Сортировка:</h3>
+					<ul class="sorting-category-list">
+						<li class="sorting-category-item">
+							<a class="sorting-link" href="#">По цене</a>
+						</li>
+						<li class="sorting-category-item">
+							<a class="sorting-link" href="#">По типу</a>
+						</li>
+						<li class="sorting-category-item">
+							<a class="sorting-link" href="#">По популярности</a>
+						</li>
+					</ul>
+					<ul class="sorting-priority-list">
+						<li class="sorting-priority-item">
+							<a class="sorting-link" href="#">▲</a>
+						</li>
+						<li class="sorting-priority-item">
+							<a class="sorting-link" href="#">▼</a>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -131,7 +133,6 @@
 							</a>
 						</p>
 						<div class="hover-catalog-item">
-							<!--нужна здесь форма или взаимодействие через js?-->
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
@@ -177,11 +178,11 @@
 					</li>
 				</ul>
 				<ul class="pagination-list">
-					<li class="pagination-item"><a class="pagination-link" href="#">Назад</a></li>
+					<li class="pagination-item step-item"><a class="pagination-step-link" href="#">Назад</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
-					<li class="pagination-item"><a class="pagination-link" href="#">Вперед</a></li>
+					<li class="pagination-item step-item"><a class="pagination-step-link" href="#">Вперед</a></li>
 				</ul>
 			</section>
 		</main>
