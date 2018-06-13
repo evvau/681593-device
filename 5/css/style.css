@@ -5,7 +5,6 @@
 		 url("../fonts/gilroylight-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
-
 }
 
 @font-face {
@@ -14,7 +13,6 @@
 		 url("../fonts/gilroyextrabold-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
-
 }
 /*===global===*/
 body {
@@ -38,7 +36,7 @@ a {
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 
 	background-color: #f0c52e;
 	border: none;
@@ -49,7 +47,7 @@ a {
 }
 
 .button:active {
-	color: rgba(0,0,0,0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 /*popup*/
 .feedback {
@@ -113,20 +111,19 @@ a {
 .user-navigation a,
 .site-navigation a,
 .catalog-menu a {
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 }
 
 .user-navigation a:hover,
 .site-navigation a:hover,
-.catalog-menu a:hover
- {
-	color: rgba(0,0,0,0.6);
+.catalog-menu a:hover {
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .user-navigation a:active,
 .site-navigation a:active,
 .catalog-menu a:active {
-	color: rgba(0,0,0,0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 /*===main-footer===*/
 .main-footer {
@@ -147,7 +144,7 @@ a {
 	opacity: 0.6;
 }
 
-.main-footer-logo:active<
+.main-footer-logo:active,
 .academy:active {
 	opacity: 0.3;
 }
@@ -159,30 +156,30 @@ a {
 }
 
 .footer-user-navigation a {
-	color: rgba(255,255,255,0.7);
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-user-navigation a:hover {
-	color: rgba(255,255,255,1);
+	color: rgba(255, 255, 255, 1);
 }
 
 .footer-user-navigation a:active {
-	color: rgba(255,255,255,0.3);
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-site-navigation a {
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	color: rgba(255,255,255,1);
+	color: rgba(255, 255, 255, 1);
 }
 
 .footer-site-navigation a:hover {
-	color: rgba(255,255,255,0.6);
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-site-navigation a:active {
-	color: rgba(255,255,255,0.3);
+	color: rgba(255, 255, 255, 0.3);
 }
 /*===promo-slider===*/
 .slider-list {
@@ -213,11 +210,11 @@ a {
 }
 
 .popular-item {
-	background-color: rgba(240,197,46,0.5);
+	background-color: rgba(240, 197, 46, 0.5);
 }
 
 .popular-item:hover {
-	background-color: rgba(240,197,46,1);
+	background-color: rgba(240, 197, 46, 1);
 }
 
 .popular-item:active {
@@ -228,11 +225,11 @@ a {
 	font-family: "gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 }
 
 .popular-link:active {
-	color: rgba(0,0,0,0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 /*===services===*/
 .services {
@@ -249,6 +246,12 @@ a {
 	font-size: 47px;
 	line-height: 48px;
 	color: #000000;
+}
+
+.button-services:focus {
+	color: #f7e184;
+	/*width????*/
+	background-color: #000000;
 }
 /*===brands===*/
 .brands-list {
@@ -334,7 +337,7 @@ a {
 .price-hint {
 	font-size: 14px;
 	line-height: 24px;
-	color: rgba(0,0,0,0.2);
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .filters label {
@@ -358,15 +361,15 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
-	color: rgba(0,0,0,0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-link:hover {
-	color: rgba(0,0,0,0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .sorting-link:active {
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 }
 /*===catalog===*/
 .catalog-list {
@@ -395,15 +398,15 @@ a {
 .hover-catalog-item .button-compare {
 	font-size: 13px;
 	line-height: 20px;
-	color: rgba(0,0,0,0.5);
+	color: rgba(0, 0, 0, 0.5);
 }
 
 .hover-catalog-item .button-compare:hover {
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 }
 
 .hover-catalog-item .button-compare:active {
-	color: rgba(0,0,0,0.2);
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .pagination-list {
@@ -418,26 +421,26 @@ a {
 }
 
 .pagination-step-link {
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 }
 
-.step-item:hover,
+.pagination-step-item:hover,
 .step-item:active {
 	background-color: #d9d9d9;
 }
 
 .pagination-step-link:active {
-	color: rgba(0,0,0,0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-link {
-	color: rgba(0,0,0,0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-link:hover {
-	color: rgba(0,0,0,0.6);
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .pagination-link:active {
-	color: rgba(0,0,0,1);
+	color: rgba(0, 0, 0, 1);
 }
