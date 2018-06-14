@@ -171,6 +171,14 @@ a {
 	letter-spacing: 0.01em;
 }
 
+.site-navigation span {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 42px;
+	opacity: 0.3;
+}
+
 .user-navigation,
 .site-navigation,
 .catalog-menu {
