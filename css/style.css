@@ -1,16 +1,16 @@
 /*===fonts===*/
 @font-face {
 	font-family: "Gilroy";
-	src: url("../fonts/gilroylight-webfont.woff2") format("woff2"),
-						url("../fonts/gilroylight-webfont.woff") format("woff");
+	src: url("../fonts/gilroylight.woff2") format("woff2"),
+		url("../fonts/gilroylight.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Gilroy";
-	src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"),
-						url("../fonts/gilroyextrabold-webfont.woff") format("woff");
+	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+		url("../fonts/gilroyextrabold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -18,7 +18,7 @@
 @font-face {
 	font-family: "Open Sans";
 	src: url("../fonts/opensanslight.woff2") format("woff2"),
-						url("../fonts/opensanslight.woff") format("woff");
+		url("../fonts/opensanslight.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
@@ -26,7 +26,7 @@
 @font-face {
 	font-family: "Open Sans";
 	src: url("../fonts/opensans.woff2") format("woff2"),
-						url("../fonts/opensans.woff") format("woff");
+		url("../fonts/opensans.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -286,7 +286,7 @@ a {
 	list-style: none;
 }
 
-.popular-item {
+/*.popular-item {
 	background-color: rgba(240, 197, 46, 0.5);
 }
 
@@ -295,8 +295,8 @@ a {
 }
 
 .popular-item:active {
-	/*не знаю*/
-}
+
+}*/
 
 .popular-link {
 	font-family: "Gilroy", "Arial", sans-serif;
