@@ -163,14 +163,21 @@ a {
 	margin: 0 auto;
 }
 /*===header===*/
+.header-wrapper {
+	width: 100%;
+	min-height: 300px;
+
+	background-color: transparent;
+}
+
 .main-header {
 	display: flex;
 	flex-direction: column;
 	width: 1160px;
 	min-height: 300px;
 	margin-top: 40px;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 50px;
 	padding: 0 60px;
 
@@ -273,17 +280,20 @@ a {
 }
 /*===main-footer===*/
 .footer-wrapper {
-	width: 100%;
-
-	background-color: #000000;
-}
-.main-footer {
 	display: flex;
 	width: 1160px;
-	margin-top: 90px;
-	margin-left: 20px;
-	margin-right: 20px;
+	min-height: 325px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 65px;
+
+	background-color: #464646;
+}
+
+.main-footer {
+	width: 100%;
+	min-height: 325px;
+	margin-top: 90px;
 
 	background-color: #464646;
 	color: #ffffff;
@@ -432,6 +442,13 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 /*===services===*/
+.services-wrapper {
+	width: 100%;
+	min-height: 290px;
+/*почему не работает*/
+	background-color: #e5e5e5;
+}
+
 .services {
 	display: flex;
 	width: 1440px;
