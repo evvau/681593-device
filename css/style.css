@@ -159,7 +159,9 @@ a {
 }
 
 .container {
-	width: 1440px;
+	display: flex;
+	flex-direction: column;
+	width: 1160px;
 	margin: 0 auto;
 }
 /*===header===*/
@@ -197,9 +199,18 @@ a {
 .user-block {
 	display: flex;
 	flex-direction: row;
+	width: 1040;
+	margin-bottom: 45px;
+}
+
+.search-form {
+	width: 440px;
+	margin-right: 100px;
 }
 
 .main-navigation {
+	width: 1040px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -210,6 +221,8 @@ a {
 }
 
 .catalog-menu {
+	width: 600px;
+
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -228,13 +241,19 @@ a {
 }
 
 .user-navigation {
+	width: 500px;
+
 	list-style: none;
+}
+
+.user-navigation-item {
+	margin-right: 20px;
 }
 
 .site-navigation {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 50px;
+	margin-bottom: 55px;
 
 	list-style: none;
 }
@@ -300,11 +319,22 @@ a {
 }
 
 .main-footer address {
+	width: 200px;
+	margin-right: 160px;
+
 	font-style: normal;
 }
 
 .main-footer a {
+	margin-bottom: 65px;
+
 	color: #ffffff;
+}
+
+.main-footer-logo {
+	width: 180px;
+	margin-right: 500px;
+	margin-bottom: 35px;
 }
 
 .main-footer-logo:hover {
@@ -324,14 +354,22 @@ a {
 }
 
 .footer-user-navigation {
+	width: 480px;
+	margin-right: 20px;
+
 	list-style: none;
 }
 
 .footer-site-navigation {
+	width: 440px;
+
 	list-style: none;
 }
 
 .our-social {
+	width: 160px;
+	margin-bottom: 65px;
+
 	list-style: none;
 }
 
@@ -366,6 +404,10 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 /*===promo-slider===*/
+.promo-slider {
+	width: 1040px;
+}
+
 .slider-list {
 	display: flex;
 	width: 1040px;
@@ -445,13 +487,13 @@ a {
 .services-wrapper {
 	width: 100%;
 	min-height: 290px;
-/*почему не работает*/
+
 	background-color: #e5e5e5;
 }
 
 .services {
 	display: flex;
-	width: 1440px;
+	width: 1160px;
 	min-height: 290px;
 	margin-bottom: 95px;
 
@@ -515,6 +557,8 @@ a {
 /*===about-company===*/
 .about-company {
 	display: flex;
+	width: 1160px;
+	margin-bottom: 45px;
 }
 
 .about-company h2 {
@@ -533,6 +577,8 @@ a {
 }
 
 .about-us-list {
+	width: 200px;
+
 	list-style: none;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
@@ -557,6 +603,11 @@ a {
 }
 
 .breadcrumbs {
+	width: 400px;
+	margin: 0;
+	margin-bottom: 50px;
+	padding: 0;
+
 	font-size: 14px;
 	line-height: 24px;
 	opacity: 0.3;
@@ -588,10 +639,17 @@ a {
 }
 
 .filter-title {
+	width: 268px; /*ошибка?!*/
+	margin-bottom: 70px;
+
 	background-color: #dbdbdb;
 }
 
 .filters form {
+	width: 268px;
+	margin: 0;
+	margin-right: 73px;
+
 	background-color: #eeeeee;
 }
 
@@ -623,15 +681,25 @@ a {
 .filter-bluetooth-list {
 	list-style: none;
 }
+
 .sorting-category-list {
+	width: 300px;
+	margin-right: 200px;
+
 	list-style: none;
 }
 
 .sorting-priority-list {
+	width: 60px;
+
 	list-style: none;
 }
 
 .sorting-category {
+	width: 832px;
+	margin-bottom: 70px;
+	padding-left: 73px;
+
 	background-color: #ebebeb;
 }
 
@@ -649,9 +717,17 @@ a {
 .sorting-link:active {
 	color: rgba(0, 0, 0, 1);
 }
-/*===catalog===*/
+===catalog===
 .catalog-list {
+	width: 760px;
+
 	list-style: none;
+}
+
+.catalog-item {
+	width: 360px;
+	margin-right: 40px;
+
 }
 
 .catalog-item h3 {
@@ -690,11 +766,15 @@ a {
 }
 
 .pagination-list {
+	width: 760px;
+
 	list-style: none;
 	background-color: #ebebeb;
 }
 
 .pagination-item {
+	width: 40px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -704,6 +784,10 @@ a {
 
 .pagination-step-link {
 	color: rgba(0, 0, 0, 1);
+}
+
+.pagination-step-item {
+	width: 125px;
 }
 
 .pagination-step-item:hover {
