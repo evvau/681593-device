@@ -775,6 +775,7 @@ a {
 .pagination-list {
 	display: flex;
 	width: 760px;
+	padding: 0;
 
 	list-style: none;
 	background-color: #ebebeb;
@@ -796,6 +797,18 @@ a {
 
 .pagination-step-item {
 	width: 125px;
+
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.pagination-step-item:first-child {
+	margin-right: 195px;
+}
+
+.pagination-step-item:last-child {
+	margin-left: 195px;
 }
 
 .pagination-step-item:hover {
