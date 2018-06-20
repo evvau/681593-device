@@ -647,7 +647,7 @@ a {
 	display: flex;
 }
 
-.filters-wrapper {
+.filters {
 	display: flex;
 	flex-direction: column;
 	width: 268px;
@@ -727,6 +727,7 @@ a {
 .catalog {
 	display: flex;
 	flex-direction: column;
+	width: 832px;
 }
 
 .catalog h3 {
