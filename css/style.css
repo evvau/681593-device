@@ -645,6 +645,7 @@ a {
 /*===filters===*/
 .catalog-wrapper {
 	display: flex;
+	width: 1160px;
 }
 
 .filters {
