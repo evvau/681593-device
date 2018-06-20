@@ -57,6 +57,7 @@ a {
 	line-height: 24px;
 	color: rgba(0, 0, 0, 1);
 	text-transform: uppercase;
+	text-align: center;
 	letter-spacing: 0.2em;
 
 	background-color: #f0c52e;
@@ -438,12 +439,16 @@ a {
 }
 
 .slide-table td {
+	padding: 0;
+	padding-right: 80px;
+
 	font-size: 13px;
 	line-height: 20px;
 }
 /*===popular===*/
 .popular-list {
 	display: flex;
+	justify-content: space-between;
 	width: 1160px;
 	margin-bottom: 80px; /*160px*/
 	padding: 0;
@@ -453,7 +458,7 @@ a {
 
 .popular-item {
 	width: 160px;
-	margin-right: 40px;
+	/*margin-right: 40px;*/
 	padding-top: 35px;
 }
 /*	background-color: rgba(240, 197, 46, 0.5);
@@ -572,6 +577,7 @@ a {
 
 .about-us-list {
 	width: 200px;
+	margin-bottom: 75px;
 
 	list-style: none;
 	font-family: "Gilroy", "Arial", sans-serif;
@@ -584,6 +590,10 @@ a {
 
 .our-contacts {
 	width: 560px;
+}
+
+.our-contacts img {
+	margin-bottom: 40px;
 }
 /*===catalog-container===*/
 .title-wrapper {
@@ -655,6 +665,7 @@ a {
 
 .filter-title {
 	width: 268px; /*ошибка?!*/
+	margin: 0;
 	margin-bottom: 70px;
 
 	background-color: #dbdbdb;
@@ -697,10 +708,14 @@ a {
 }
 
 .filter-color-list {
+	padding: 0;
+
 	list-style: none;
 }
 
 .filter-bluetooth-list {
+	padding: 0;
+
 	list-style: none;
 }
 /*===catalog===*/
@@ -709,17 +724,38 @@ a {
 	flex-direction: column;
 }
 
+.catalog h3 {
+	padding-top: 23px;
+	padding-bottom: 23px;
+	margin: 0;
+	margin-right: 40px;
+
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
 .sorting-category-list {
 	display: flex;
+	justify-content: space-between;
 	width: 300px;
-	margin-right: 200px;
+	margin: 0;
+	margin-right: 240px;
 	padding: 0;
 
 	list-style: none;
 }
 
 .sorting-priority-list {
-	width: 60px;
+	display: flex;
+	justify-content: space-between;
+	width: 40px;
+	margin: 0;
 	padding: 0;
 
 	list-style: none;
@@ -727,7 +763,7 @@ a {
 
 .sorting-category {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	width: 760px;
 	margin-bottom: 70px;
 	padding-left: 72px;
@@ -864,4 +900,14 @@ a {
 
 .pagination-link:active {
 	color: rgba(0, 0, 0, 1);
+}
+
+* > * {
+	outline: 1px solid red;
+}
+* > * > * {
+	outline: 1px solid green;
+}
+* > * > * {
+	outline: 1px solid blue;
 }
