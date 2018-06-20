@@ -307,7 +307,7 @@ a {
 }
 
 .main-footer address {
-	margin-right: 160px;
+	margin-right: 172px;
 
 	font-style: normal;
 }
@@ -319,7 +319,7 @@ a {
 }
 
 .main-footer-logo {
-	margin-right: 520px;
+	margin-right: 517px;
 	margin-bottom: 35px;
 }
 
@@ -348,7 +348,8 @@ a {
 
 .footer-site-navigation {
 	width: 440px;
-	margin-right: 200px;
+	margin-right: 172px;
+	margin-bottom: 63px;
 	padding: 0;
 
 	list-style: none;
@@ -356,7 +357,10 @@ a {
 
 .our-social {
 	width: 160px;
-	margin-bottom: 65px;
+	margin-left: 446px;
+	margin-right: 446px;
+	padding: 0;
+	padding-bottom: 65px;
 
 	list-style: none;
 }
