@@ -12,16 +12,18 @@
 			<a class="main-header-logo" href="index.html">
 				<img src="img/logo.png" width="164" height="36" alt="Логотип интернет-магазина DEVICE">
 			</a>
-			<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-				<label for="site-search"><!--search.svg--><span class="visually-hidden">Поиск по сайту</span></label>
-				<input type="search" id="site-search" name="site-search" placeholder="Поиск по сайту">
-			</form>
-			<ul class="user-navigation">
-				<li class="user-navigation-item"><a class="user-navigation-link profile-link" href="profile">Валентин Петухов</a></li>
-				<li class="user-navigation-item"><a class="user-navigation-link" href="#">Выйти</a></li>
-				<li class="user-navigation-item"><a class="user-navigation-link" href="#">Сравнить</a></li>
-				<li class="user-navigation-item"><a class="user-navigation-link" href="#">Корзина</a></li>
-			</ul>
+			<div class="user-block">
+				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+					<label for="site-search"><!--search.svg--><span class="visually-hidden">Поиск по сайту</span></label>
+					<input type="search" id="site-search" name="site-search" placeholder="Поиск по сайту">
+				</form>
+				<ul class="user-navigation">
+					<li class="user-navigation-item"><a class="user-navigation-link profile-link" href="profile">Валентин Петухов</a></li>
+					<li class="user-navigation-item"><a class="user-navigation-link" href="#">Выйти</a></li>
+					<li class="user-navigation-item"><a class="user-navigation-link" href="#">Сравнить</a></li>
+					<li class="user-navigation-item"><a class="user-navigation-link" href="#">Корзина</a></li>
+				</ul>
+			</div>
 			<nav class="main-navigation">
 				<ul class="site-navigation">
 					<li class="site-navigation-item"><a class="site-navigation-link" href="#">Каталог товаров</a><span>+</span>
@@ -42,15 +44,18 @@
 		</header>
 
 		<main class="container">
-			<h1>Моноподы для селфи</h1>
-			<ol class="breadcrumbs">
-				<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-				<li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
-				<li class="breadcrumbs-item-current">Моноподы для селфи</li>
-			</ol>
+			<div class="title-wrapper">
+				<h1>Моноподы для селфи</h1>
+				<ol class="breadcrumbs">
+					<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+					<li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+					<li class="breadcrumbs-item-current">Моноподы для селфи</li>
+				</ol>
+			</div>
+			<div class="catalog-wrapper">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<div class="test">
+				<div class="filters-wrapper">
 					<h3 class="filter-title">Фильтр:</h3>
 					<form action="https://echo.htmlacademy.ru" method="get">
 						<fieldset>
@@ -98,31 +103,31 @@
 						</fieldset>
 						<button class="button button-filters" type="submit">Показать</button>
 					</form>
-					<div class="sorting-category">
-						<h3>Сортировка:</h3>
-						<ul class="sorting-category-list">
-							<li class="sorting-category-item">
-								<a class="sorting-link" href="#">По цене</a>
-							</li>
-							<li class="sorting-category-item">
-								<a class="sorting-link" href="#">По типу</a>
-							</li>
-							<li class="sorting-category-item">
-								<a class="sorting-link" href="#">По популярности</a>
-							</li>
-						</ul>
-						<ul class="sorting-priority-list">
-							<li class="sorting-priority-item">
-								<a class="sorting-link" href="#">▲</a>
-							</li>
-							<li class="sorting-priority-item">
-								<a class="sorting-link" href="#">▼</a>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</section>
 			<section class="catalog">
+				<div class="sorting-category">
+					<h3>Сортировка:</h3>
+					<ul class="sorting-category-list">
+						<li class="sorting-category-item">
+							<a class="sorting-link" href="#">По цене</a>
+						</li>
+						<li class="sorting-category-item">
+							<a class="sorting-link" href="#">По типу</a>
+						</li>
+						<li class="sorting-category-item">
+							<a class="sorting-link" href="#">По популярности</a>
+						</li>
+					</ul>
+					<ul class="sorting-priority-list">
+						<li class="sorting-priority-item">
+							<a class="sorting-link" href="#">▲</a>
+						</li>
+						<li class="sorting-priority-item">
+							<a class="sorting-link" href="#">▼</a>
+						</li>
+					</ul>
+				</div>
 				<h2 class="visually-hidden">Список моноподов для селфи</h2>
 				<ul class="catalog-list">
 					<li class="catalog-item">
@@ -131,7 +136,7 @@
 						<p class="catalog-item-image">
 								<img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
 						</p>
-						<div class="hover-catalog-item">
+						<div class="hover-catalog-item visually-hidden">
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
@@ -142,7 +147,7 @@
 						<p class="catalog-item-image">
 								<img src="img/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 						</p>
-						<div class="hover-catalog-item">
+						<div class="hover-catalog-item visually-hidden">
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
@@ -153,7 +158,7 @@
 						<p class="catalog-item-image">
 								<img src="img/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 						</p>
-						<div class="hover-catalog-item">
+						<div class="hover-catalog-item visually-hidden">
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
@@ -164,7 +169,7 @@
 						<p class="catalog-item-image">
 								<img src="img/follow-me-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
 						</p>
-						<div class="hover-catalog-item">
+						<div class="hover-catalog-item visually-hidden">
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
@@ -178,6 +183,7 @@
 					<li class="pagination-item pagination-step-item"><a class="pagination-step-link" href="#">Вперед</a></li>
 				</ul>
 			</section>
+			</div>
 		</main>
 
 		<footer class="main-footer">

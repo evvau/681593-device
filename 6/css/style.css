@@ -307,7 +307,7 @@ a {
 }
 
 .main-footer address {
-	margin-right: 160px;
+	margin-right: 172px;
 
 	font-style: normal;
 }
@@ -319,7 +319,7 @@ a {
 }
 
 .main-footer-logo {
-	margin-right: 520px;
+	margin-right: 517px;
 	margin-bottom: 35px;
 }
 
@@ -348,7 +348,8 @@ a {
 
 .footer-site-navigation {
 	width: 440px;
-	margin-right: 200px;
+	margin-right: 172px;
+	margin-bottom: 63px;
 	padding: 0;
 
 	list-style: none;
@@ -356,7 +357,10 @@ a {
 
 .our-social {
 	width: 160px;
-	margin-bottom: 65px;
+	margin-left: 446px;
+	margin-right: 446px;
+	padding: 0;
+	padding-bottom: 65px;
 
 	list-style: none;
 }
@@ -582,7 +586,14 @@ a {
 	width: 560px;
 }
 /*===catalog-container===*/
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 .container h1 {
+	padding-left: 60px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -596,6 +607,7 @@ a {
 	width: 400px;
 	margin: 0;
 	margin-bottom: 50px;
+	padding-left: 60px;
 
 	font-size: 14px;
 	line-height: 24px;
@@ -616,13 +628,21 @@ a {
 	opacity: 0.1;
 }
 /*===filters===*/
-.test {
+.catalog-wrapper {
+	display: flex;
+}
+
+.filters-wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 1100px;
+	width: 268px;
+	padding-left: 60px;
 }
 
 .filters h3 {
+	padding-top: 23px;
+	padding-bottom: 23px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -645,7 +665,6 @@ a {
 	flex-direction: column;
 	width: 268px;
 	margin: 0;
-	margin-right: 73px;
 
 	background-color: #eeeeee;
 }
@@ -684,25 +703,34 @@ a {
 .filter-bluetooth-list {
 	list-style: none;
 }
+/*===catalog===*/
+.catalog {
+	display: flex;
+	flex-direction: column;
+}
 
 .sorting-category-list {
+	display: flex;
 	width: 300px;
 	margin-right: 200px;
+	padding: 0;
 
 	list-style: none;
 }
 
 .sorting-priority-list {
 	width: 60px;
+	padding: 0;
 
 	list-style: none;
 }
 
 .sorting-category {
 	display: flex;
-	width: 832px;
+	align-items: flex-start;
+	width: 760px;
 	margin-bottom: 70px;
-	padding-left: 73px;
+	padding-left: 72px;
 
 	background-color: #ebebeb;
 }
@@ -721,18 +749,20 @@ a {
 .sorting-link:active {
 	color: rgba(0, 0, 0, 1);
 }
-/*===catalog===*/
-/*Я не знаю почему они не умещаются по 2 в строчку, вроде везде паддинги марджины убрал!*/
+
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
-	width: 760px;
+	width: 832px;
 	padding: 0;
+	padding-left: 32px;
 
 	list-style: none;
 }
 
 .catalog-item {
+	display: flex;
+	flex-direction: column-reverse;
 	width: 360px;
 	margin-left: 40px;
 }
@@ -775,6 +805,8 @@ a {
 .pagination-list {
 	display: flex;
 	width: 760px;
+	margin-left: 73px;
+	padding: 0;
 
 	list-style: none;
 	background-color: #ebebeb;
@@ -796,6 +828,18 @@ a {
 
 .pagination-step-item {
 	width: 125px;
+
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.pagination-step-item:first-child {
+	margin-right: 195px;
+}
+
+.pagination-step-item:last-child {
+	margin-left: 195px;
 }
 
 .pagination-step-item:hover {
