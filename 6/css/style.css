@@ -167,7 +167,6 @@ a {
 	padding: 0 20px;
 }
 /*===header===*/
-
 .main-header {
 	width: 1040px;
 	min-height: 300px;
@@ -405,6 +404,7 @@ a {
 	width: 1040px;
 	margin-bottom: 115px;
 	padding: 0;
+	padding-left: 90px;
 
 	list-style: none;
 }
@@ -414,7 +414,7 @@ a {
 }
 
 .slider-item img {
-	margin-right: 100px;
+	margin-right: 120px;
 }
 
 .slider-title {
