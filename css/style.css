@@ -586,7 +586,7 @@ a {
 	width: 560px;
 }
 /*===catalog-container===*/
-.catalog-wrapper {
+.title-wrapper {
 	display: flex;
 	flex-direction: column;
 }
@@ -628,9 +628,8 @@ a {
 	opacity: 0.1;
 }
 /*===filters===*/
-.filters {
+.catalog-wrapper {
 	display: flex;
-	width: 1160px;
 }
 
 .filters-wrapper {
@@ -666,7 +665,6 @@ a {
 	flex-direction: column;
 	width: 268px;
 	margin: 0;
-	margin-right: 73px;
 
 	background-color: #eeeeee;
 }
@@ -705,8 +703,14 @@ a {
 .filter-bluetooth-list {
 	list-style: none;
 }
+/*===catalog===*/
+.catalog {
+	display: flex;
+	flex-direction: column;
+}
 
 .sorting-category-list {
+	display: flex;
 	width: 300px;
 	margin-right: 200px;
 	padding: 0;
@@ -724,7 +728,7 @@ a {
 .sorting-category {
 	display: flex;
 	align-items: flex-start;
-	width: 832px;
+	width: 760px;
 	margin-bottom: 70px;
 	padding-left: 72px;
 
@@ -745,8 +749,7 @@ a {
 .sorting-link:active {
 	color: rgba(0, 0, 0, 1);
 }
-/*===catalog===*/
-/*Я не знаю почему они не умещаются по 2 в строчку, вроде везде паддинги марджины убрал!*/
+
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -802,6 +805,7 @@ a {
 .pagination-list {
 	display: flex;
 	width: 760px;
+	margin-left: 73px;
 	padding: 0;
 
 	list-style: none;
