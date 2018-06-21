@@ -623,6 +623,7 @@ img {
 .title-wrapper {
 	display: flex;
 	flex-direction: column;
+	width: 1160px;
 }
 
 .container h1 {
@@ -638,7 +639,7 @@ img {
 
 .breadcrumbs {
 	display: flex;
-	width: 400px;
+	width: 1160px;
 	margin: 0;
 	margin-bottom: 50px;
 	padding-left: 60px;
@@ -648,6 +649,11 @@ img {
 	opacity: 0.3;
 
 	list-style: none;
+}
+
+.breadcrumbs-item,
+.breadcrumbs-item-current {
+	width: auto;
 }
 
 .breadcrumbs a {
@@ -676,7 +682,10 @@ img {
 	background-color: #eeeeee;
 }
 
-.filters h3 {
+.filter-title {
+	width: 268px;
+	margin: 0;
+	margin-bottom: 70px;
 	padding-top: 23px;
 	padding-bottom: 23px;
 
@@ -688,12 +697,6 @@ img {
 	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-}
-
-.filter-title {
-	width: 268px; /*ошибка?!*/
-	margin: 0;
-	margin-bottom: 70px;
 
 	background-color: #dbdbdb;
 }
@@ -779,6 +782,10 @@ img {
 	list-style: none;
 }
 
+.sorting-category-item {
+	width: auto;
+}
+
 .sorting-priority-list {
 	display: flex;
 	justify-content: space-between;
@@ -787,6 +794,10 @@ img {
 	padding: 0;
 
 	list-style: none;
+}
+
+.sorting-priority-item {
+	width: auto;
 }
 
 .sorting-category {
