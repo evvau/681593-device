@@ -8,40 +8,42 @@
 	  <base href="https://htmlacademy-htmlcss.github.io/681593-device/6/">
 </head>
 	<body>
-		<header class="main-header container">
-			<a class="main-header-logo" href="index.html">
-				<img src="img/logo.png" width="164" height="36" alt="Логотип интернет-магазина DEVICE">
-			</a>
-			<div class="user-block">
-				<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-					<label for="site-search"><!--search.svg--><span class="visually-hidden">Поиск по сайту</span></label>
-					<input type="search" id="site-search" name="site-search" placeholder="Поиск по сайту">
-				</form>
-				<ul class="user-navigation">
-					<li class="user-navigation-item"><a class="user-navigation-link profile-link" href="profile">Валентин Петухов</a></li>
-					<li class="user-navigation-item"><a class="user-navigation-link" href="#">Выйти</a></li>
-					<li class="user-navigation-item"><a class="user-navigation-link" href="#">Сравнить</a></li>
-					<li class="user-navigation-item"><a class="user-navigation-link" href="#">Корзина</a></li>
-				</ul>
-			</div>
-			<nav class="main-navigation">
-				<ul class="site-navigation">
-					<li class="site-navigation-item"><a class="site-navigation-link" href="#">Каталог товаров</a><span>+</span>
-						<ul class="catalog-menu">
-							<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Виртуальная реальность</a></li>
-							<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Моноподы для селфи</a></li>
-							<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Экшн-камеры</a></li>
-							<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Фитнес-браслеты</a></li>
-							<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Умные часы</a></li>
-							<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Квадрокоптеры</a></li>
-						</ul>
-					</li>
-					<li class="site-navigation-item"><a class="site-navigation-link" href="#">Доставка</a></li>
-					<li class="site-navigation-item"><a class="site-navigation-link" href="#">Гарантия</a></li>
-					<li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
-				</ul>
-			</nav>
-		</header>
+		<div class="header-wrapper">
+			<header class="main-header container">
+				<a class="main-header-logo" href="index.html">
+					<img src="img/logo.png" width="164" height="36" alt="Логотип интернет-магазина DEVICE">
+				</a>
+				<div class="user-block">
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<label for="site-search"><!--search.svg--><span class="visually-hidden">Поиск по сайту</span></label>
+						<input type="search" id="site-search" name="site-search" placeholder="Поиск по сайту">
+					</form>
+					<ul class="user-navigation">
+						<li class="user-navigation-item"><a class="user-navigation-link profile-link" href="profile">Валентин Петухов</a></li>
+						<li class="user-navigation-item"><a class="user-navigation-link" href="#">Выйти</a></li>
+						<li class="user-navigation-item"><a class="user-navigation-link" href="#">Сравнить</a></li>
+						<li class="user-navigation-item"><a class="user-navigation-link" href="#">Корзина</a></li>
+					</ul>
+				</div>
+				<nav class="main-navigation">
+					<ul class="site-navigation">
+						<li class="site-navigation-item"><a class="site-navigation-link" href="#">Каталог товаров</a><span>+</span>
+							<ul class="catalog-menu">
+								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Виртуальная реальность</a></li>
+								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Моноподы для селфи</a></li>
+								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Экшн-камеры</a></li>
+								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Фитнес-браслеты</a></li>
+								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Умные часы</a></li>
+								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Квадрокоптеры</a></li>
+							</ul>
+						</li>
+						<li class="site-navigation-item"><a class="site-navigation-link" href="#">Доставка</a></li>
+						<li class="site-navigation-item"><a class="site-navigation-link" href="#">Гарантия</a></li>
+						<li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
 
 		<main class="container">
 			<div class="title-wrapper">
@@ -55,55 +57,53 @@
 			<div class="catalog-wrapper">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<div class="filters-wrapper">
-					<h3 class="filter-title">Фильтр:</h3>
-					<form action="https://echo.htmlacademy.ru" method="get">
-						<!-- <fieldset> -->
-							<legend>Стоимость</legend>
-							<input type="range" id="price-range-field" name="price-range" step="1">
-							<p class="price-hint">от 0 до 5000</p>
-						</fieldset>
-						<fieldset>
-							<legend>Цвет</legend>
-							<ul class="filter-color-list">
-								<li>
-									<input type="checkbox" id="filter-color-black" name="color" value="black" checked>
-									<label for="filter-color-black">Черный</label>
-								</li>
-								<li>
-									<input type="checkbox" id="filter-color-white" name="color" value="white">
-									<label for="filter-color-white">Белый</label>
-								</li>
-								<li>
-									<input type="checkbox" id="filter-color-blue" name="color" value="blue" checked>
-									<label for="filter-color-blue">Синий</label>
-								</li>
-								<li>
-									<input type="checkbox" id="filter-color-red" name="color" value="red" checked>
-									<label for="filter-color-red">Красный</label>
-								</li>
-								<li>
-									<input type="checkbox" id="filter-color-pink" name="color" value="pink">
-									<label for="filter-color-pink">Розовый</label>
-								</li>
-							</ul>
-						</fieldset>
-						<fieldset>
-							<legend>Bluetooth</legend>
-							<ul class="filter-bluetooth-list">
-								<li>
-									<input type="radio" name="bluetooth" id="filter-have-bluetooth" value="yes" checked>
-									<label for="filter-have-bluetooth">Есть</label>
-								</li>
-								<li>
-									<input type="radio" name="bluetooth" id="filter-dont-have-bluetooth" value="no">
-									<label for="filter-dont-have-bluetooth">Нет</label>
-								</li>
-							</ul>
-						</fieldset>
-						<button class="button button-filters" type="submit">Показать</button>
-					</form>
-				</div>
+				<h3 class="filter-title">Фильтр:</h3>
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<!-- <fieldset> -->
+						<legend>Стоимость</legend>
+						<input type="range" id="price-range-field" name="price-range" step="1">
+						<p class="price-hint">от 0 до 5000</p>
+					</fieldset>
+					<fieldset>
+						<legend>Цвет</legend>
+						<ul class="filter-color-list">
+							<li>
+								<input type="checkbox" id="filter-color-black" name="color" value="black" checked>
+								<label for="filter-color-black">Черный</label>
+							</li>
+							<li>
+								<input type="checkbox" id="filter-color-white" name="color" value="white">
+								<label for="filter-color-white">Белый</label>
+							</li>
+							<li>
+								<input type="checkbox" id="filter-color-blue" name="color" value="blue" checked>
+								<label for="filter-color-blue">Синий</label>
+							</li>
+							<li>
+								<input type="checkbox" id="filter-color-red" name="color" value="red" checked>
+								<label for="filter-color-red">Красный</label>
+							</li>
+							<li>
+								<input type="checkbox" id="filter-color-pink" name="color" value="pink">
+								<label for="filter-color-pink">Розовый</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Bluetooth</legend>
+						<ul class="filter-bluetooth-list">
+							<li>
+								<input type="radio" name="bluetooth" id="filter-have-bluetooth" value="yes" checked>
+								<label for="filter-have-bluetooth">Есть</label>
+							</li>
+							<li>
+								<input type="radio" name="bluetooth" id="filter-dont-have-bluetooth" value="no">
+								<label for="filter-dont-have-bluetooth">Нет</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="button button-filters" type="submit">Показать</button>
+				</form>
 			</section>
 			<section class="catalog">
 				<div class="sorting-category">
