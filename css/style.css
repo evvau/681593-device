@@ -50,7 +50,7 @@ a {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 /*button*/
@@ -192,6 +192,7 @@ img {
 
 .main-header-logo {
 	position: absolute;
+	top: 20px;
 
 	max-width: 164px;
 }
@@ -208,12 +209,31 @@ img {
 	display: flex;
 	flex-direction: row;
 	width: 1040px;
-	margin-bottom: 45px;
+	margin-bottom: 24px;
 }
 
 .search-form {
+	position: relative;
+
 	width: 440px;
 	margin-right: 100px;
+	margin-top: 44px;
+	padding-left: 25px;
+}
+
+.search-form::before {
+	content: "";
+
+	position: absolute;
+	top: 8px;
+	left: 3px;
+
+	width: 15px;
+	height: 15px;
+
+	background-image: url("../img/icons/search.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .main-navigation {
@@ -229,7 +249,9 @@ img {
 }
 
 .catalog-menu {
-	width: 600px;
+	width: 200px;
+	margin-right: 40px;
+	padding: 0;
 
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
@@ -238,26 +260,95 @@ img {
 	line-height: 36px;
 	text-transform: none;
 	letter-spacing: 0.01em;
+
+	list-style: none;
+}
+
+.catalog-menu:nth-child(2) {
+	width: 160px;
+}
+
+.catalog-menu:last-child {
+	width: 160px;
+	margin-right: 0;
 }
 
 .site-navigation span {
+	margin-left: 8px;
+	margin-right: 289px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 42px;
+	font-size: 40px;
 	opacity: 0.3;
+	vertical-align: middle;
 }
 
 .user-navigation {
+	display: flex;
 	width: 500px;
+	margin-top: 44px;
 	padding: 0;
 
 	list-style: none;
 }
 
 .user-navigation-item {
-	width: auto;
+	position: relative;
+
+	width: 80px;
+	padding-left: 25px;
 	margin-right: 20px;
+}
+
+.user-navigation-item::before {
+	content: "";
+
+	position: absolute;
+	top: 8px;
+	left: 0;
+
+	width: 15px;
+	height: 15px;
+}
+
+.user-navigation-item:nth-child(1) {
+	width: 260px;
+}
+
+.user-navigation-item:nth-child(1)::before {
+	background-image: url("../img/icons/user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.user-navigation-item:nth-child(2)::before {
+	top: 10px;
+	left: 5px;
+
+	background-image: url("../img/icons/compare.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.user-navigation-item:last-child {
+	text-align: end;
+	margin-right: 0;
+}
+
+.user-navigation-item:last-child::before {
+	left: 15px;
+
+	background-image: url("../img/icons/cart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.user-navigation-item:nth-child(1):active::before,
+.user-navigation-item:nth-child(2):active::before,
+.user-navigation-item:last-child:active::before {
+	opacity: 0.3;
 }
 
 .site-navigation {
@@ -269,15 +360,23 @@ img {
 
 	list-style: none;
 }
-
+/*при отображении выпадающего под-меню "доставка, гарантия, контакты" сдвигаются вправо, почему?*/
 .site-navigation-item {
 	width: auto;
 }
 
-.catalog-menu {
-	padding: 0;
+.site-navigation-item:nth-child(2) {
+	margin-right: 34px;
+}
 
-	list-style: none;
+.site-navigation-item:nth-child(3) {
+	/*почему то не встает в стык*/
+	margin-right: 103px;
+}
+
+.catalog-menu-wrapper {
+	display: flex;
+	width: 600px;
 }
 
 .user-navigation a {
@@ -422,7 +521,8 @@ img {
 .slider-list {
 	display: flex;
 	width: 1040px;
-	margin-bottom: 115px;
+	margin-top: -135px;
+	margin-bottom: 50px;
 	padding: 0;
 	padding-left: 60px;
 	list-style: none;
@@ -435,15 +535,34 @@ img {
 }
 
 .slider-image-wrapper {
-	max-width: 526px;
+	max-width: 560px;
+	margin-right: 40px;
 }
 
 .slider-wrapper {
+	position: relative;
+
 	width: 500px;
 }
 
-.slider-title {
+.slider-wrapper::before {
+	content: "";
+
+	position: absolute;
+	top: 5px;
+
+	width: 100px;
+	height: 7px;
+
+	background-color: #ffffff;
+}
+
+.slider-wrapper .slider-title {
+	position: relative;
+	z-index: 1;
+
 	width: 500px;
+	margin-bottom: 20px;
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
@@ -451,6 +570,33 @@ img {
 	font-size: 47px;
 	line-height: 56px;
 	color: #000000;
+}
+
+.slider-wrapper p {
+	margin-bottom: 47px;
+}
+
+.slider-number {
+	position: absolute;
+	top: -46px;
+	right: -12px;
+	z-index: 0;
+
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 179px;
+	line-height: 179px;
+	color: #ffffff
+}
+
+.button-promo {
+	padding: 0 42px;
+}
+
+.slide-table {
+	margin-top: 52px;
+
 }
 
 .slide-table .slide-table-value {
@@ -464,7 +610,8 @@ img {
 
 .slide-table td {
 	padding: 0;
-	padding-right: 80px;
+	padding-right: 73px;
+	padding-bottom: 5px;
 
 	font-size: 13px;
 	line-height: 20px;
@@ -473,6 +620,7 @@ img {
 .popular-list {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	width: 1160px;
 	margin-bottom: 80px; /*160px*/
 	padding: 0;
@@ -482,32 +630,24 @@ img {
 
 .popular-item {
 	width: 160px;
-	/*margin-right: 40px;*/
-	padding-top: 35px;
 }
-/*	background-color: rgba(240, 197, 46, 0.5);
-}
-
-.popular-item:last-child {
-	margin-right: 0;
-}
-.popular-item:hover {
-	/*background-color: rgba(240, 197, 46, 1);
-}
-
-/*.popular-item:active {
-
-}*/
 
 .popular-link {
-	padding-top: 35px;
-
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 18px;
 	line-height: 24px;
 	color: rgba(0, 0, 0, 1);
+}
+
+.popular-link svg {
+	width: 100px;
+	height: 100px;
+	padding: 30px;
+	margin-bottom: 20px;
+
+	background-color: rgba(240, 197, 46, 0.5);
 }
 
 .popular-link:active {
