@@ -36,9 +36,11 @@ body {
 	padding: 0;
 
 	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 	font-size: 15px;
 	line-height: 30px;
-	font-weight: 300;
+
 	color: #464646;
 	letter-spacing: 0.01em;
 
@@ -215,10 +217,10 @@ img {
 .search-form {
 	position: relative;
 
-	width: 440px;
+	width: 405px;
 	margin-right: 100px;
 	margin-top: 44px;
-	padding-left: 25px;
+	padding-left: 35px;
 }
 
 .search-form::before {
@@ -234,6 +236,34 @@ img {
 	background-image: url("../img/icons/search.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.search-form input[type="search"] {
+	width: 440px;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.01em;
+	color: rgba(0, 0, 0, 1);
+
+	border: none;
+	outline: none;
+
+	background-color: #f7e296;
+}
+
+.search-form input[type="search"]:focus {
+	box-sizing: border-box;
+
+	border-bottom: 2px solid #000000;
+}
+
+.search-form input[type="search"]:focus::after {
+	border-bottom: 2px solid #000000;
+	padding-left: 0;
 }
 
 .main-navigation {
@@ -622,7 +652,7 @@ img {
 	justify-content: space-between;
 	align-items: flex-start;
 	width: 1160px;
-	margin-bottom: 80px; /*160px*/
+	margin-bottom: 80px;
 	padding: 0;
 
 	list-style: none;
@@ -638,6 +668,7 @@ img {
 	font-style: normal;
 	font-size: 18px;
 	line-height: 24px;
+	letter-spacing: 0.01em;
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -648,6 +679,15 @@ img {
 	margin-bottom: 20px;
 
 	background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-link svg:hover {
+	background-color: rgba(240, 197, 46, 1);
+}
+
+.popular-link svg:active {
+	fill-opacity: 0.3;
+	background-color: rgba(240, 197, 46, 1);
 }
 
 .popular-link:active {
