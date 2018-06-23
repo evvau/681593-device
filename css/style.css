@@ -377,7 +377,7 @@ img {
 	background-position: 0 0;
 }
 
-.user-navigation-item:nth-child(2)::before {
+.compare-navigation-item::before {
 	top: 10px;
 	left: 5px;
 
@@ -671,27 +671,34 @@ img {
 	display: flex;
 	width: 1040px;
 	margin-top: -135px;
-	margin-bottom: 50px;
+	margin-bottom: 82px;
+	margin-left: 60px;
 	padding: 0;
-	padding-left: 60px;
+
 	list-style: none;
 }
 
 .slider-item {
 	display: flex;
-	justify-content: space-between;
 	width: 1040px;
 }
 
 .slider-image-wrapper {
-	max-width: 560px;
-	margin-right: 40px;
+	width: 560px;
+}
+
+.slider-item img {
+	margin-top: -32px;
+	/*почему не работает margin auto>?????<<<<<*/
+	margin-left: 6%;
+	margin-right: 6%;
 }
 
 .slider-wrapper {
 	position: relative;
 
 	width: 500px;
+	margin-left: 40px;
 }
 
 .slider-wrapper::before {
@@ -830,12 +837,26 @@ img {
 	content: "";
 
 	position: absolute;
-	top: 0;
+	right: 1160px;
 
-	min-height: 290px;
+	width: calc((100vw - 1177px) / 2);
+	height: 100%;
 
 	background-color: #e5e5e5;
 }
+
+.services::after {
+	content: "";
+
+	position: absolute;
+	left: 1160px;
+
+	width: calc((100vw - 1177px) / 2);
+	height: 100%;
+
+	background-color: #e5e5e5;
+}
+
 
 .services-slider-button-list {
  position: relative;
