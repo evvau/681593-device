@@ -676,7 +676,7 @@ img {
 	display: flex;
 	width: 1040px;
 	margin-top: -135px;
-	margin-bottom: 82px;
+	margin-bottom: 92px;
 	margin-left: 60px;
 	padding: 0;
 
@@ -690,7 +690,7 @@ img {
 
 .slider-image-wrapper {
 	display: flex;
-	width: 560px;
+	width: 500px;
 }
 
 .slider-item img {
