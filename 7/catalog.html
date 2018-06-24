@@ -16,7 +16,8 @@
 				<div class="user-block">
 					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 						<label for="site-search"><span class="visually-hidden">Поиск по сайту</span></label>
-						<input class="search-text" type="search" id="site-search" name="site-search" placeholder="Поиск по сайту">
+						<input class="search-text" type="text" id="site-search" name="site-search" placeholder="Поиск по сайту">
+						<button class="search-button" type="submit">Найти</button>
 					</form>
 					<ul class="user-navigation">
 						<li class="user-navigation-item"><a class="user-navigation-link profile-link" href="profile">Валентин Петухов</a></li>
@@ -28,14 +29,16 @@
 				<nav class="main-navigation">
 					<ul class="site-navigation">
 						<li class="site-navigation-item"><a class="site-navigation-link" href="#">Каталог товаров</a><span>+</span>
-							<ul class="catalog-menu">
-								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Виртуальная реальность</a></li>
-								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Моноподы для селфи</a></li>
-								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Экшн-камеры</a></li>
-								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Фитнес-браслеты</a></li>
-								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Умные часы</a></li>
-								<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Квадрокоптеры</a></li>
-							</ul>
+							<div class="catalog-menu-wrapper visually-hidden">
+								<ul class="catalog-menu">
+									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Виртуальная реальность</a></li>
+									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Моноподы для селфи</a></li>
+									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Экшн-камеры</a></li>
+									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Фитнес-браслеты</a></li>
+									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Умные часы</a></li>
+									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Квадрокоптеры</a></li>
+								</ul>
+							</div>
 						</li>
 						<li class="site-navigation-item"><a class="site-navigation-link" href="#">Доставка</a></li>
 						<li class="site-navigation-item"><a class="site-navigation-link" href="#">Гарантия</a></li>
