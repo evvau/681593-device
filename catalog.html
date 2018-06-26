@@ -6,7 +6,7 @@
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="catalog-page">
 		<div class="header-wrapper">
 			<header class="main-header">
 				<a class="main-header-logo" href="index.html">
@@ -19,22 +19,26 @@
 						<button class="search-button" type="submit">Найти</button>
 					</form>
 					<ul class="user-navigation">
-						<li class="user-navigation-item"><a class="user-navigation-link profile-link" href="profile">Валентин Петухов</a></li>
-						<li class="user-navigation-item"><a class="user-navigation-link" href="#">Выйти</a></li>
-						<li class="user-navigation-item compare-navigation-item"><a class="user-navigation-link" href="#">Сравнить</a></li>
-						<li class="user-navigation-item"><a class="user-navigation-link" href="#">Корзина</a></li>
+						<li class="user-navigation-item"><a class="user-navigation-link user-enter-link" href="profile">Валентин Петухов</a></li>
+						<li class="user-navigation-item inner-user"><a class="user-navigation-link user-out-link" href="#">Выйти</a></li>
+						<li class="user-navigation-item compare-navigation-item"><a class="user-navigation-link user-compare-link" href="#">Сравнить</a></li>
+						<li class="user-navigation-item"><a class="user-navigation-link user-cart-link" href="#">Корзина</a></li>
 					</ul>
 				</div>
 				<nav class="main-navigation">
 					<ul class="site-navigation">
 						<li class="site-navigation-item"><a class="site-navigation-link" href="#">Каталог товаров</a><span>+</span>
-							<div class="catalog-menu-wrapper visually-hidden">
+							<div class="catalog-menu-wrapper">
 								<ul class="catalog-menu">
 									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Виртуальная реальность</a></li>
 									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Моноподы для селфи</a></li>
 									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Экшн-камеры</a></li>
+								</ul>
+								<ul class="catalog-menu">
 									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Фитнес-браслеты</a></li>
 									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Умные часы</a></li>
+								</ul>
+								<ul class="catalog-menu">
 									<li class="catalog-menu-item"><a class="catalog-menu-link" href="#">Квадрокоптеры</a></li>
 								</ul>
 							</div>
@@ -68,9 +72,10 @@
 					</fieldset>
 					<fieldset>
 						<legend>Цвет</legend>
+						<div class="filter-group">
 						<ul class="filter-color-list">
 							<li>
-								<input type="checkbox" id="filter-color-black" name="color" value="black" checked>
+								<input class="test" type="checkbox" id="filter-color-black" name="color" value="black" checked>
 								<label for="filter-color-black">Черный</label>
 							</li>
 							<li>
@@ -90,6 +95,7 @@
 								<label for="filter-color-pink">Розовый</label>
 							</li>
 						</ul>
+						</div>
 					</fieldset>
 					<fieldset>
 						<legend>Bluetooth</legend>
@@ -123,10 +129,10 @@
 					</ul>
 					<ul class="sorting-priority-list">
 						<li class="sorting-priority-item">
-							<a class="sorting-link" href="#">▲</a>
+							<a class="sorting-link" href="#"><span class="visually-hidden">▲</span></a>
 						</li>
 						<li class="sorting-priority-item">
-							<a class="sorting-link" href="#">▼</a>
+							<a class="sorting-link" href="#"><span class="visually-hidden">▼</span></a>
 						</li>
 					</ul>
 				</div>
@@ -140,7 +146,7 @@
 						<p class="catalog-item-image">
 							<img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
 						</p>
-						<div class="hover-catalog-item visually-hidden">
+						<div class="hover-catalog-item">
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
@@ -153,7 +159,7 @@
 						<p class="catalog-item-image">
 							<img src="img/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 						</p>
-						<div class="hover-catalog-item visually-hidden">
+						<div class="hover-catalog-item">
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
@@ -166,7 +172,7 @@
 						<p class="catalog-item-image">
 							<img src="img/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 						</p>
-						<div class="hover-catalog-item visually-hidden">
+						<div class="hover-catalog-item">
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
@@ -179,7 +185,7 @@
 						<p class="catalog-item-image">
 							<img src="img/follow-me-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
 						</p>
-						<div class="hover-catalog-item visually-hidden">
+						<div class="hover-catalog-item">
 							<a class="button button-catalog" href="#">В корзину</a>
 							<a class="button-compare" href="#">Добавить к сравнению</a>
 						</div>
