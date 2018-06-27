@@ -806,6 +806,14 @@ img {
 	width: 1040px;
 }
 
+.slider-item:nth-child(2) {
+	display: none;
+}
+
+.slider-item:nth-child(3) {
+	display: none;
+}
+
 .slider-image-wrapper {
 	display: flex;
 	justify-content: center;
@@ -879,7 +887,7 @@ img {
 
 .button-promo {
 	width: 220px;
-	margin-right: 138px;
+	margin-right: 170px;
 }
 
 .slider-control-list {
@@ -887,6 +895,7 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 65px;
+	padding: 0;
 
 	list-style: none;
 }
@@ -898,15 +907,16 @@ img {
 .slider-control-list label {
 	position: relative;
 
+	display: block;
 	margin-right: 0;
 }
 
-.slider-control-list label::before {
+.slider-control-list span::before {
 	content: "";
 
 	position: absolute;
 	top: 9px;
-	left: -4px;
+	left: 4px;
 
 	width: 23px;
 	height: 23px;
@@ -917,9 +927,7 @@ img {
 	background-position: 0 0;
 }
 
-.slider-control-list input:checked + label::before {
-	content: "";
-
+.slider-control-list input[type="radio"]:checked + span::before {
 	background-image: url("../img/icons/slider-button.svg");
 }
 
