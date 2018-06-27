@@ -95,7 +95,6 @@ img {
 	left: 50%;
 	z-index: 5;
 
-	display: none;
 	width: 960px;
 	min-height: 552px;
 	padding: 80px 100px;
@@ -107,7 +106,10 @@ img {
 }
 
 .modal-map {
-	background-color: #ffffff;
+	display: none;
+	width: 960px;
+	height: 559px;
+	padding: 0;
 }
 
 .feedback form {
@@ -118,6 +120,8 @@ img {
 }
 
 .feedback {
+	display: none;
+
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
