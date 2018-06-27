@@ -755,12 +755,21 @@ img {
 	list-style: none;
 }
 
+.our-social li {
+	margin-right: 22px;
+	margin-bottom: 20px;
+}
+
+.our-social li:nth-child(3n) {
+	margin-right: 0;
+}
+
 .social-button {
 	display: block;
 	align-items: center;
 	width: 32px;
 	height: 32px;
-	margin-right: 22px;
+
 
 	background-repeat: no-repeat;
 	opacity: 0.3;
@@ -784,8 +793,6 @@ img {
 }
 
 .social-button-twitter {
-	margin-right: 0;
-
 	background-image: url("../img/icons/twitter.svg");
 }
 
