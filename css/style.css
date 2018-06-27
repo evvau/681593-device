@@ -806,6 +806,14 @@ img {
 	width: 1040px;
 }
 
+.slider-item:nth-child(2) {
+	display: none;
+}
+
+.slider-item:nth-child(3) {
+	display: none;
+}
+
 .slider-image-wrapper {
 	display: flex;
 	justify-content: center;
@@ -903,7 +911,7 @@ img {
 	margin-right: 0;
 }
 
-.slider-control-list label::before {
+.slider-control-list span::before {
 	content: "";
 
 	position: absolute;
@@ -919,7 +927,7 @@ img {
 	background-position: 0 0;
 }
 
-.slider-control-list input[type="radio"]:checked + label::before {
+.slider-control-list input[type="radio"]:checked + span::before {
 	background-image: url("../img/icons/slider-button.svg");
 }
 
