@@ -81,7 +81,6 @@ img {
 	border: none;
 }
 
-
 .button:hover {
 	background: #f0c52e;
 }
@@ -89,7 +88,34 @@ img {
 .button:active {
 	color: rgba(0, 0, 0, 0.3);
 }
-/*popup*/
+/*=======popup============*/
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 5;
+
+	width: 960px;
+	min-height: 552px;
+	padding: 80px 100px;
+	margin-left: -480px;
+	margin-top: -276px;
+	box-sizing: border-box;
+
+	box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2)
+}
+
+.modal-map {
+	background-color: #ffffff;
+}
+
+.feedback form {
+	display: flex;
+	width: 760px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 .feedback {
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
@@ -100,7 +126,22 @@ img {
 	background-color: #ffffff;
 }
 
+.feedback-field {
+	display: flex;
+	width: 360px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-bottom: 35px;
+}
+
+.feedback-field-comment {
+	width: 760px;
+	margin-bottom: 45px;
+}
+
 .feedback-field label {
+	margin-bottom: 10px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-style: normal;
@@ -111,10 +152,23 @@ img {
 }
 
 .feedback-field input {
+	width: 360px;
+	padding: 17px 20px;
+	box-sizing: border-box;
+
+	border: none;
+
 	background-color: #f2f2f2;
 }
 
 .feedback-field textarea {
+	width: 760px;
+	min-height: 155px;
+	padding: 17px 20px;
+	box-sizing: border-box;
+
+
+	border: none;
 	background-color: #f2f2f2;
 }
 
@@ -128,38 +182,47 @@ img {
 
 .feedback-field input:focus {
 	background-color: #ffffff;
-	border-color: #f7e296;
+	outline-color: #f7e296;
 }
 
 .feedback-field textarea:focus {
 	background-color: #ffffff;
-	border-color: #f7e296;
+	outline-color: #f7e296;
 }
 
 .feedback-field input:invalid {
 	background-color: #f6dada;
 }
 
+.button-feedback {
+	width: 200px;
+}
+
 .button-close {
-	background-color: rgba(240, 197, 46, 0.5);
-}
+	position: absolute;
+	z-index: 6;
+	top: 22px;
+	right: 15px;
 
-.button-close:hover {
-	background-color: rgba(240, 197, 46, 1);
-}
-
-.button-close:active {
-	background-color: rgba(240, 197, 46, 0.3);
-}
-/*.button-close {
 	width: 55px;
 	height: 55px;
 
 	background-image: url("../img/icons/modal-close.svg");
 	background-repeat: no-repeat;
-	background-clip: content-box;
+	background-position: 0 0;
 	border: none;
-}*/
+	background-color: transparent;
+	opacity: 0.5;
+}
+
+.button-close:hover {
+	opacity: 1;
+	background-color: transparent;
+}
+
+.button-close:active {
+	opacity: 0.3;
+}
 /*===general rules===*/
 .visually-hidden {
 	position: absolute;
