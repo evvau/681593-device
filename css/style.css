@@ -2141,16 +2141,22 @@ body > * > * > * {
 	outline: 1px solid blue;
 }
 */
-.new {
-	/*position: absolute;*/
+.hide-new-item {
+	display: none;
+}
+
+.new-item::before {
+	content: "New";
+
+	position: absolute;
 	top: 30px;
-	right: 25px;
+	right: 27px;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
