@@ -114,9 +114,9 @@ img {
 
 .feedback form {
 	display: flex;
-	width: 760px;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	width: 760px;
 }
 
 .feedback {
@@ -133,9 +133,9 @@ img {
 
 .feedback-field {
 	display: flex;
-	width: 360px;
 	flex-wrap: wrap;
 	flex-direction: column;
+	width: 360px;
 	margin-bottom: 35px;
 }
 
@@ -161,9 +161,8 @@ img {
 	padding: 17px 20px;
 	box-sizing: border-box;
 
-	border: none;
-
 	background-color: #f2f2f2;
+	border: none;
 }
 
 .feedback-field textarea {
@@ -172,9 +171,8 @@ img {
 	padding: 17px 20px;
 	box-sizing: border-box;
 
-
-	border: none;
 	background-color: #f2f2f2;
+	border: none;
 }
 
 .feedback-field input:hover {
@@ -221,8 +219,8 @@ img {
 }
 
 .button-close:hover {
-	opacity: 1;
 	background-color: transparent;
+	opacity: 1;
 }
 
 .button-close:active {
@@ -1033,7 +1031,7 @@ img {
 .slide-table td:last-child {
 	padding-right: 70px;
 }
-/*===popular===*/
+/*===============================popular===========================*/
 .popular-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -1064,15 +1062,15 @@ img {
 }
 
 .popular-link svg {
-	width: 100px;
-	height: 100px;
+/*	width: 100px;
+	height: 100px;*/
 	padding: 30px;
 	margin-bottom: 24px;
 
 	background-color: rgba(240, 197, 46, 0.5);
 }
 
-.popular-item:nth-child(1) svg {
+/*.popular-item:nth-child(1) svg {
 	width: 97px;
 	height: 55px;
 	padding-top: 51px;
@@ -1080,7 +1078,7 @@ img {
 	padding-left: 31px;
 	padding-right: 31px;
 }
-
+*/
 .popular-item:nth-child(2) svg {
 	width: 86px;
 	height: 117px;
@@ -1090,14 +1088,23 @@ img {
 	padding-right: 36px;
 }
 
-.popular-item:nth-child(3) svg {
+.popular-svg-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	height: 160px;
+	box-sizing: border-box;
+}
+
+/*.popular-item:nth-child(3) svg {
 	width: 71px;
 	height: 87px;
 	padding-top: 37px;
 	padding-bottom: 36px;
 	padding-left: 49px;
 	padding-right: 40px;
-}
+}*/
 
 .popular-item:nth-child(4) svg {
 	width: 107px;
@@ -1228,8 +1235,8 @@ img {
 	height: 164px;
 
 	background-image: url("../img/icons/delivery.svg");
- background-repeat: no-repeat;
- background-position: 0 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .services-slider-item:nth-child(2)::after {
@@ -1243,8 +1250,8 @@ img {
 	height: 195px;
 
 	background-image: url("../img/icons/warranty.svg");
- background-repeat: no-repeat;
- background-position: 0 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .services-slider-item:nth-child(3)::after {
@@ -1258,8 +1265,8 @@ img {
 	height: 188px;
 
 	background-image: url("../img/icons/credit.svg");
- background-repeat: no-repeat;
- background-position: 0 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .services-slider-list h2 {
@@ -1566,7 +1573,6 @@ img {
 	flex-direction: column;
 	width: 268px;
 	margin: 0;
-/*	padding-top: 70px;*/
 
 	background-color: #eeeeee;
 }
@@ -1867,7 +1873,7 @@ img {
 	background-image: url("../img/icons/icon-up-dir.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	opacity: 0.2;
+	opacity: 1;
 }
 
 .sorting-priority-item:last-child::before {
@@ -1930,7 +1936,8 @@ img {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-link:active {
+.sorting-link:active,
+.sorting-link-active {
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -2050,6 +2057,16 @@ img {
 	background-color: #ebebeb;
 }
 
+.pagination-number-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+
+	list-style: none;
+}
+
 .pagination-item {
 	width: auto;
 	padding-top: 1px;
@@ -2080,14 +2097,13 @@ img {
 }
 
 .pagination-step-item:first-child {
-	margin-right: 210px;
+	/*margin-right: 210px;*/
 	padding-left: 1px;
 }
 
 .pagination-step-item:last-child {
 	margin: 0;
-
-	margin-left: 178px;
+	margin-left: 37px;
 	padding-right: 3px;
 }
 
@@ -2125,16 +2141,22 @@ body > * > * > * {
 	outline: 1px solid blue;
 }
 */
-.new {
-	/*position: absolute;*/
+.hide-new-item {
+	display: none;
+}
+
+.new-item::before {
+	content: "New";
+
+	position: absolute;
 	top: 30px;
-	right: 25px;
+	right: 27px;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
