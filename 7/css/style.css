@@ -1061,11 +1061,22 @@ img {
 	color: rgba(0, 0, 0, 1);
 }
 
-.popular-link svg {
-/*	width: 100px;
-	height: 100px;*/
+/*.popular-link svg {
+	width: 160px;
+	height: 160px;
 	padding: 30px;
-	margin-bottom: 24px;
+
+
+	background-color: rgba(240, 197, 46, 0.5);
+}*/
+
+.svg-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	height: 160px;
+	margin-bottom: 32px;
 
 	background-color: rgba(240, 197, 46, 0.5);
 }
@@ -1077,36 +1088,21 @@ img {
 	padding-bottom: 54px;
 	padding-left: 31px;
 	padding-right: 31px;
-}
-*/
+}*/
+
 .popular-item:nth-child(2) svg {
-	width: 86px;
-	height: 117px;
 	padding-top: 40px;
 	padding-bottom: 3px;
 	padding-left: 38px;
 	padding-right: 36px;
 }
 
-.popular-svg-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 160px;
-	height: 160px;
-	box-sizing: border-box;
-}
-
-/*.popular-item:nth-child(3) svg {
-	width: 71px;
-	height: 87px;
-	padding-top: 37px;
-	padding-bottom: 36px;
+.popular-item:nth-child(3) svg {
 	padding-left: 49px;
 	padding-right: 40px;
-}*/
+}
 
-.popular-item:nth-child(4) svg {
+/*.popular-item:nth-child(4) svg {
 	width: 107px;
 	height: 65px;
 	padding-top: 49px;
@@ -1131,13 +1127,13 @@ img {
 	padding-bottom: 43px;
 	padding-left: 13px;
 	padding-right: 15px;
-}
+}*/
 
-.popular-link:hover svg {
+.popular-link:hover .svg-wrapper {
 	background-color: rgba(240, 197, 46, 1);
 }
 
-.popular-link:active svg {
+.popular-link:active .svg-wrapper {
 	fill-opacity: 0.3;
 	background-color: rgba(240, 197, 46, 1);
 }
@@ -1502,7 +1498,8 @@ img {
 	background-position: 0 0;
 }
 
-.breadcrumbs a {
+.breadcrumbs a,
+.breadcrumbs-item-current {
 	color: rgba(0, 0, 0, 0.3);
 }
 
