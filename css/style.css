@@ -1343,7 +1343,8 @@ img {
 	margin-right: 40px;
 
 	opacity: 0.3;
-	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	        filter: grayscale(1);
 }
 
 .brands-item:last-child {
@@ -1352,7 +1353,8 @@ img {
 
 .brands-item:hover {
 	opacity: 1;
-	filter: none;
+	-webkit-filter: none;
+	        filter: none;
 }
 /*===about-company===*/
 .about-company {
@@ -1688,7 +1690,8 @@ img {
 
 .range-button-start:hover,
 .range-button-end:hover {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .price-hint {
