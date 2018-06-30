@@ -319,8 +319,9 @@
 				<section class="our-contacts">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<!--Карта-->
-					<img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+					<a class="interactive-map">
+						<img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+					</a>
 					<a class="button button-our-contacts" href="#">Напишите нам</a>
 				</section>
 			</section>
@@ -364,7 +365,7 @@
 			</div>
 		</footer>
 
-		<section class="modal feedback">
+		<section class="modal modal-feedback">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<form action="https://echo.htmlacademy.ru" method="post">
 				<button class="button-close" type="button"><span class="visually-hidden">Зыкрыть окно</span></button>
@@ -385,8 +386,12 @@
 		</section>
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Карта с адрессом офиса</h2>
-			<img src="img/map-big.jpg" width="960" height="559" alt="Карта офиса по адресу улица Строителей, 15">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.332106033883!2d37.52839054055326!3d55.686978838288645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1530396351202" width="960" height="559"></iframe>
+			<div class="map-wrapper">
+				<img src="img/map-big.jpg" width="960" height="559" alt="Карта офиса по адресу улица Строителей, 15">
+			</div>
 			<button class="button-close"><span class="visually-hidden">Зыкрыть окно</span></button>
 		</section>
+		<script src="js/script.js"></script>
 	</body>
 </html>

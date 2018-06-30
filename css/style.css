@@ -112,14 +112,26 @@ img {
 	padding: 0;
 }
 
-.feedback form {
+.modal-map iframe {
+	position: relative;
+	z-index: 2;
+
+	border: none;
+}
+
+.map-wrapper {
+	position: absolute;
+	z-index: 1;
+}
+
+.modal-feedback form {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 760px;
 }
 
-.feedback {
+.modal-feedback {
 	display: none;
 
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -225,6 +237,58 @@ img {
 
 .button-close:active {
 	opacity: 0.3;
+}
+
+.modal-show {
+	display: flex;
+
+	animation: show 0.2s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
+}
+
+@keyframes show {
+	0% {
+		transform: scale(0);
+	}
+	20% {
+		transform: scale(0.2);
+	}
+	40% {
+		transform: scale(0.4);
+	}
+	60% {
+		transform: scale(0.6);
+	}
+	80% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(10px);
+	}
+	40% {
+		transform: translateX(-10px);
+	}
+	60% {
+		transform: translateX(10px);
+	}
+	80% {
+		transform: translateX(-10px);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 /*===general rules===*/
 .visually-hidden {
@@ -1449,6 +1513,10 @@ img {
 	background-color: #000000;
 }
 
+.interactive-map {
+	cursor: pointer;
+}
+
 .our-contacts img {
 	margin-top: 10px;
 	margin-bottom: 59px;
@@ -2036,11 +2104,11 @@ img {
 	top: 40%;
 	left: 0;
 
-	width: 360px;
 	display: none;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	width: 360px;
 }
 
 .catalog-item-image:hover .hover-catalog-item {
