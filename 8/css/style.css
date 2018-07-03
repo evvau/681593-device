@@ -1002,8 +1002,6 @@ img {
 }
 
 .slider-list {
-/*	display: flex;
-	justify-content: space-around;*/
 	width: 1040px;
 	margin-left: 60px;
 	margin-top: -135px;
@@ -1093,7 +1091,7 @@ img {
 	position: absolute;
 	z-index: 3;
 	right: 22px;
-	top: 160px;
+	bottom: 58%;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -1182,10 +1180,8 @@ img {
 .popular-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
 	width: 1160px;
-	margin-bottom: 180px;
+	margin-bottom: 160px;
 	padding: 0;
 
 	list-style: none;
@@ -1193,6 +1189,12 @@ img {
 
 .popular-item {
 	width: 160px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+.popular-item:nth-child(6n) {
+	margin-right: 0;
 }
 
 .popular-link span {
@@ -1219,15 +1221,6 @@ img {
 	background-color: rgba(240, 197, 46, 0.5);
 }
 
-/*.popular-item:nth-child(1) svg {
-	width: 97px;
-	height: 55px;
-	padding-top: 51px;
-	padding-bottom: 54px;
-	padding-left: 31px;
-	padding-right: 31px;
-}*/
-
 .popular-item:nth-child(2) svg {
 	padding-top: 40px;
 	padding-bottom: 3px;
@@ -1239,33 +1232,6 @@ img {
 	padding-left: 49px;
 	padding-right: 40px;
 }
-
-/*.popular-item:nth-child(4) svg {
-	width: 107px;
-	height: 65px;
-	padding-top: 49px;
-	padding-bottom: 46px;
-	padding-left: 28px;
-	padding-right: 25px;
-}
-
-.popular-item:nth-child(5) svg {
-	width: 56px;
-	height: 98px;
-	padding-top: 31px;
-	padding-bottom: 31px;
-	padding-left: 55px;
-	padding-right: 49px;
-}
-
-.popular-item:nth-child(6) svg {
-	width: 132px;
-	height: 69px;
-	padding-top: 48px;
-	padding-bottom: 43px;
-	padding-left: 13px;
-	padding-right: 15px;
-}*/
 
 .popular-link:hover .svg-wrapper {
 	background-color: rgba(240, 197, 46, 1);
@@ -1484,7 +1450,7 @@ img {
 	        filter: grayscale(1);
 }
 
-.brands-item:last-child {
+.brands-item:nth-child(4n) {
 	margin-right: 0;
 }
 
@@ -1829,8 +1795,8 @@ img {
 	background: linear-gradient(90deg, #91c92f 60%, #dbdbdb 60%);
 }
 
-.range-button-start:hover,
-.range-button-end:hover {
+.range-button-start:active,
+.range-button-end:active {
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
 }
@@ -1953,7 +1919,9 @@ img {
 }
 
 .filter-color-list input:disabled ~ label::before,
-.filter-bluetooth-list input:disabled ~ label::before {
+.filter-bluetooth-list input:disabled ~ label::before,
+.filter-bluetooth-list input:disabled ~ label,
+.filter-color-list input:disabled ~ label {
 	opacity: 0.25;
 }
 
@@ -2294,6 +2262,11 @@ img {
 }
 
 .pagination-link:active {
+	color: rgba(0, 0, 0, 1);
+}
+
+.pagination-link-current,
+.pagination-link-current:hover {
 	color: rgba(0, 0, 0, 1);
 }
 
