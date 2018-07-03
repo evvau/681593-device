@@ -1744,9 +1744,9 @@ img {
 	background-color: #000000;
 }
 
-.filters input[type="range"] {
+/*.filters input[type="range"] {
 	display: none;
-}
+}*/
 
 .price-range {
 	position: relative;
@@ -1815,9 +1815,9 @@ img {
 	margin-right: 60px;
 }
 
-.filter-color-list input[type="checkbox"] {
+/*.filter-color-list input[type="checkbox"] {
 	display: none;
-}
+}*/
 
 .filter-color-list label {
 	position: relative;
@@ -1877,9 +1877,9 @@ img {
 	list-style: none;
 }
 
-.filter-bluetooth-list input[type="radio"] {
+/*.filter-bluetooth-list input[type="radio"] {
 	display: none;
-}
+}*/
 
 .filter-bluetooth-list label {
 	position: relative;
@@ -1916,6 +1916,11 @@ img {
 .filter-color-list label:active::before,
 .filter-bluetooth-list label:active::before {
 	opacity: 1;
+}
+
+.filter-color-list input:focus ~ label,
+.filter-bluetooth-list input:focus ~ label {
+	outline: 2px solid lightblue;
 }
 
 .filter-color-list input:disabled ~ label::before,
