@@ -122,6 +122,8 @@ img {
 .map-wrapper {
 	position: absolute;
 	z-index: 1;
+	top: 0;
+	left: 0;
 }
 
 .modal-feedback form {
@@ -402,6 +404,7 @@ img {
 	top: 21px;
 
 	max-width: 164px;
+	margin-bottom: 25px;
 }
 
 .main-header-logo[href]:hover {
@@ -418,6 +421,10 @@ img {
 	flex-direction: row;
 	width: 1040px;
 	margin-bottom: 24px;
+}
+
+.search-wrapper {
+	display: flex;
 }
 
 .search-form {
@@ -446,9 +453,8 @@ img {
 }
 
 .search-form input[type="text"] {
-	width: 283px;
+	width: 300px;
 	padding: 0;
-	padding-bottom: 5px;
 	padding-left: 35px;
 
 	font-family: "Open Sans", "Arial", sans-serif;
@@ -465,28 +471,38 @@ img {
 }
 
 .search-form input[type="text"]:focus {
+	margin-top: -15px;
+
 	border-bottom: 2px solid #000000;
-}
-
-.search-text:focus + .search-button {
-	display: inline-block;
-	margin-top: -10px;
-}
-
-.search-text + .search-button:active {
-	display: inline-block;
-	margin-top: -10px;
 }
 
 .search-button {
 	display: none;
-	padding: 15px 18px 11px 18px;
+	width: 85px;
+	height: 46px;
 
 	font-size: 15px;
 	color: #000000;
 
 	background-color: #f7e296;
 	border: 2px solid #000000;
+}
+
+.search-text::placeholder {
+	opacity: 0.3;
+}
+
+.search-text:hover::placeholder {
+	opacity: 0.6;
+}
+
+.search-text:focus::placeholder {
+	opacity: 1;
+}
+
+.search-text:focus + .search-button,
+.search-text + .search-button:active {
+	display: block;
 }
 
 .search-button:hover {
@@ -1166,7 +1182,7 @@ img {
 .slide-table td {
 	word-break: break-word;
 	padding: 0;
-	padding-right: 74px;
+	padding-right: 72px;
 	padding-bottom: 5px;
 
 	font-size: 13px;
@@ -1174,7 +1190,7 @@ img {
 }
 
 .slide-table td:last-child {
-	padding-right: 70px;
+	padding-right: 65px;
 }
 /*===============================popular===========================*/
 .popular-list {
@@ -1443,21 +1459,50 @@ img {
 
 .brands-item {
 	width: 260px;
+	height: 100px;
 	margin-right: 40px;
 
 	opacity: 0.3;
-	-webkit-filter: grayscale(1);
-	        filter: grayscale(1);
 }
 
 .brands-item:nth-child(4n) {
 	margin-right: 0;
 }
 
+.dji {
+	background-image: url("../img/brands-logo-dji-dark.png");
+}
+
+.dji:hover {
+	background-image: url("../img/brands-logo-dji.png");
+}
+
+.sp-gadgets {
+	background-image: url("../img/brands-logo-sp-gadgets-dark.png");
+}
+
+.sp-gadgets:hover {
+	background-image: url("../img/brands-logo-sp-gadgets.png");
+}
+
+.go-pro {
+	background-image: url("../img/brands-logo-go-pro-dark.png");
+}
+
+.go-pro:hover {
+	background-image: url("../img/brands-logo-go-pro.png");
+}
+
+.vive {
+	background-image: url("../img/brands-logo-vive-dark.png");
+}
+
+.vive:hover {
+	background-image: url("../img/brands-logo-vive.png");
+}
+
 .brands-item:hover {
 	opacity: 1;
-	-webkit-filter: none;
-	        filter: none;
 }
 /*===about-company===*/
 .about-company {
@@ -1690,6 +1735,7 @@ img {
 	content: "";
 
 	position: absolute;
+	top: 0;
 	right: 268px;
 
 	width: calc(100vw - 1177px);
@@ -1712,6 +1758,7 @@ img {
 	content: "";
 
 	position: absolute;
+	top: 0;
 	right: 268px;
 
 	width: calc(100vw - 1177px);
@@ -1743,10 +1790,6 @@ img {
 
 	background-color: #000000;
 }
-
-/*.filters input[type="range"] {
-	display: none;
-}*/
 
 .price-range {
 	position: relative;
@@ -1815,10 +1858,6 @@ img {
 	margin-right: 60px;
 }
 
-/*.filter-color-list input[type="checkbox"] {
-	display: none;
-}*/
-
 .filter-color-list label {
 	position: relative;
 
@@ -1876,10 +1915,6 @@ img {
 
 	list-style: none;
 }
-
-/*.filter-bluetooth-list input[type="radio"] {
-	display: none;
-}*/
 
 .filter-bluetooth-list label {
 	position: relative;
@@ -1945,11 +1980,13 @@ img {
 .catalog h3 {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	min-height: 70px;
+	/*align-items: center;*/
+	/*min-height: 70px;*/
 	width: auto;
 	margin: 0;
 	margin-right: 56px;
+	padding-top: 23px;
+	padding-bottom: 23px;
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -2059,6 +2096,7 @@ img {
 	content: "";
 
 	position: absolute;
+	top: 0;
 	left: 829px;
 
 	width: calc((100vw - 1172px) / 2);
