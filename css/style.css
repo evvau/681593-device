@@ -1933,11 +1933,13 @@ img {
 .catalog h3 {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	min-height: 70px;
+	/*align-items: center;*/
+	/*min-height: 70px;*/
 	width: auto;
 	margin: 0;
 	margin-right: 56px;
+	padding-top: 23px;
+	padding-bottom: 23px;
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
