@@ -1690,6 +1690,7 @@ img {
 	content: "";
 
 	position: absolute;
+	top: 0;
 	right: 268px;
 
 	width: calc(100vw - 1177px);
@@ -1712,6 +1713,7 @@ img {
 	content: "";
 
 	position: absolute;
+	top: 0;
 	right: 268px;
 
 	width: calc(100vw - 1177px);
@@ -2049,6 +2051,7 @@ img {
 	content: "";
 
 	position: absolute;
+	top: 0;
 	left: 829px;
 
 	width: calc((100vw - 1172px) / 2);
