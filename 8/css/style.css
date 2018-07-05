@@ -2266,7 +2266,7 @@ img {
 .pagination-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	align-items: center;
 	width: 760px;
 	min-height: 70px;
@@ -2280,7 +2280,7 @@ img {
 	background-color: #ebebeb;
 }
 
-.pagination-number-list {
+/*.pagination-number-list {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
@@ -2289,7 +2289,7 @@ img {
 
 	list-style: none;
 }
-
+*/
 .pagination-item {
 	width: auto;
 	padding-top: 1px;
@@ -2321,10 +2321,13 @@ img {
 
 .pagination-step-item:first-child {
 	padding-left: 1px;
+	padding-right: 30px;
+	margin-right: auto;
 }
 
 .pagination-step-item:last-child {
 	margin: 0;
+	margin-left: auto;
 	padding-right: 3px;
 }
 
