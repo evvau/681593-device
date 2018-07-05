@@ -15,9 +15,11 @@
 				</a>
 				<div class="user-block">
 					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-						<label for="site-search"><span class="visually-hidden">Поиск по сайту</span></label>
-						<input class="search-text" type="text" id="site-search" name="site-search" placeholder="Поиск по сайту">
-						<button class="search-button" type="submit">Найти</button>
+						<div class="search-wrapper">
+							<label for="site-search"><span class="visually-hidden">Поиск по сайту</span></label>
+							<input class="search-text" type="text" id="site-search" name="site-search" placeholder="Поиск по сайту">
+							<button class="search-button" type="submit">Найти</button>
+						</div>
 					</form>
 					<ul class="user-navigation">
 						<li class="user-navigation-item"><a class="user-navigation-link user-enter-link" href="profile">Валентин Петухов</a></li>
@@ -118,7 +120,7 @@
 			</section>
 			<section class="catalog">
 				<div class="sorting-category">
-					<h3>Сортировка:</h3>
+					<h3 class="sorting-title">Сортировка:</h3>
 					<ul class="sorting-category-list">
 						<li class="sorting-category-item">
 							<a class="sorting-link sorting-link-active" href="#">По цене</a>
