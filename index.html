@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Интернет-магазин &laquo;DEVICE&raquo;</title>
-		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/normalize.min.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="header-wrapper">
@@ -14,9 +14,11 @@
 				</a>
 				<div class="user-block">
 					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-						<label for="site-search"><span class="visually-hidden">Поиск по сайту</span></label>
-						<input class="search-text" type="text" id="site-search" name="site-search" placeholder="Поиск по сайту">
-						<button class="search-button" type="submit">Найти</button>
+						<div class="search-wrapper">
+							<label for="site-search"><span class="visually-hidden">Поиск по сайту</span></label>
+							<input class="search-text" type="text" id="site-search" name="site-search" placeholder="Поиск по сайту">
+							<button class="search-button" type="submit">Найти</button>
+						</div>
 					</form>
 					<ul class="user-navigation">
 						<li class="user-navigation-item"><a class="user-navigation-link user-enter-link" href="#">Войти</a></li>
@@ -54,6 +56,14 @@
 			<h1 class="visually-hidden">Интернет магазин Device</h1>
 			<section class="promo-slider">
 				<h2 class="visually-hidden">Промо товары</h2>
+				<input class="visually-hidden" type="radio" id="promo-slider-1" name="toggle" checked>
+				<input class="visually-hidden" type="radio" id="promo-slider-2" name="toggle">
+				<input class="visually-hidden" type="radio" id="promo-slider-3" name="toggle">
+				<div class="slider-control-list">
+					<label class="slider-control-item slider-control-item-1" for="promo-slider-1">Первый слайд</label>
+					<label class="slider-control-item slider-control-item-2" for="promo-slider-2">Второй слайд</label>
+					<label class="slider-control-item slider-control-item-3" for="promo-slider-3">Третий слайд</label>
+				</div>
 				<ul class="slider-list">
 					<li class="slider-item">
 						<div class="slider-image-wrapper">
@@ -63,29 +73,7 @@
 							<p class="slider-title">Делай селфи,<br> как Бен Стиллер!</p>
 							<span class="slider-number">01</span>
 							<p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-							<div class="slider-control-wrapper">
-								<a class="button button-promo" href="#">Подробнее</a>
-								<ul class="slider-control-list">
-									<li>
-										<label>
-											<input type="radio" name="toggle" checked>
-											<span></span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input type="radio" name="toggle">
-											<span></span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input type="radio" name="toggle">
-											<span></span>
-										</label>
-									</li>
-								</ul>
-							</div>
+							<a class="button button-promo" href="#">Подробнее</a>
 							<table class="slide-table">
 								<tr>
 									<td class="slide-table-value">8,5 м</td>
@@ -108,29 +96,7 @@
 							<p class="slider-title">Худеем<br> правильно!</p>
 							<span class="slider-number">02</span>
 							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-							<div class="slider-control-wrapper">
-								<a class="button button-promo" href="#">Подробнее</a>
-								<ul class="slider-control-list">
-									<li>
-										<label>
-											<input type="radio" name="toggle">
-											<span></span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input type="radio" name="toggle" checked>
-											<span></span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input type="radio" name="toggle">
-											<span></span>
-										</label>
-									</li>
-								</ul>
-							</div>
+							<a class="button button-promo" href="#">Подробнее</a>
 							<table class="slide-table">
 								<tr>
 									<td class="slide-table-value">48 часов</td>
@@ -149,29 +115,7 @@
 							<p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
 							<span class="slider-number">03</span>
 							<p>Этот обычный на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-							<div class="slider-control-wrapper">
-								<a class="button button-promo" href="#" >Подробнее</a>
-								<ul class="slider-control-list">
-									<li>
-										<label>
-											<input type="radio" name="toggle">
-											<span></span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input type="radio" name="toggle">
-											<span></span>
-										</label>
-									</li>
-									<li>
-										<label>
-											<input type="radio" name="toggle" checked>
-											<span></span>
-										</label>
-									</li>
-								</ul>
-							</div>
+							<a class="button button-promo" href="#">Подробнее</a>
 							<table class="slide-table">
 								<tr>
 									<td class="slide-table-value">800 м</td>
@@ -307,15 +251,18 @@
 			</section>
 			<section class="services">
 				<h2 class="visually-hidden">Услуги</h2>
+				<input class="visually-hidden" type="radio" id="services-slider-1" name="toggle-services" checked>
+				<input class="visually-hidden" type="radio" id="services-slider-2" name="toggle-services">
+				<input class="visually-hidden" type="radio" id="services-slider-3" name="toggle-services">
 				<ul class="services-slider-button-list">
 					<li>
-						<button class="button button-services button-services-1" type="button">Доставка</button>
+						<label class="button button-services button-services-1" for="services-slider-1">Доставка</label>
 					</li>
 					<li>
-						<button class="button button-services button-services-2" type="button">Гарантия</button>
+						<label class="button button-services button-services-2" for="services-slider-2">Гарантия</label>
 					</li>
 					<li>
-						<button class="button button-services button-services-3" type="button">Кредит</button>
+						<label class="button button-services button-services-3" for="services-slider-3">Кредит</label>
 					</li>
 				</ul>
 				<ul class="services-slider-list">
@@ -323,11 +270,11 @@
 						<h2>Доставка</h2>
 						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</li>
-					<li class="services-slider-item visually-hidden">
+					<li class="services-slider-item">
 						<h2>Гарантия</h2>
 						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом конечно же.</p>
 					</li>
-					<li class="services-slider-item visually-hidden">
+					<li class="services-slider-item">
 						<h2>Кредит</h2>
 						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка разумеется.</p>
 					</li>
@@ -336,25 +283,17 @@
 			<section class="brands">
 				<h2 class="visually-hidden">Компании партнеры</h2>
 				<ul class="brands-list">
-					<li class="brands-item">
-						<a class="brands-link" href="#">
-							<img src="img/brands-logo-dji.png" width="260" height="100"  alt="Компания партнер dji">
-						</a>
+					<li class="brands-item dji" aria-label="Компания партнер dji">
+						<a class="brands-link" href="#"></a>
 					</li>
-					<li class="brands-item">
-						<a class="brands-link" href="#">
-							<img src="img/brands-logo-sp-gadgets.png" width="260" height="100"  alt="Компания партнер Sp Gadgets">
-						</a>
+					<li class="brands-item sp-gadgets" aria-label="Компания партнер Sp Gadgets">
+						<a class="brands-link" href="#"></a>
 					</li>
-					<li class="brands-item">
-						<a class="brands-link" href="#">
-							<img src="img/brands-logo-go-pro.png" width="260" height="100"  alt="Компания партнер GoPro">
-						</a>
+					<li class="brands-item go-pro" aria-label="Компания партнер GoPro">
+						<a class="brands-link" href="#"></a>
 					</li>
-					<li class="brands-item">
-						<a class="brands-link" href="#">
-							<img src="img/brands-logo-vive.png" width="260" height="100"  alt="Компания партнер Vive">
-						</a>
+					<li class="brands-item vive" aria-label="Компания партнер Vive">
+						<a class="brands-link" href="#"></a>
 					</li>
 				</ul>
 			</section>
@@ -374,9 +313,10 @@
 				<section class="our-contacts">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<!--Карта-->
-					<img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-					<a class="button button-our-contacts" href="#">Напишите нам</a>
+					<a class="interactive-map">
+						<img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+					</a>
+					<a class="button button-our-contacts" href="feedback.html">Напишите нам</a>
 				</section>
 			</section>
 		</main>
@@ -419,7 +359,7 @@
 			</div>
 		</footer>
 
-		<section class="modal feedback">
+		<section class="modal modal-feedback">
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<form action="https://echo.htmlacademy.ru" method="post">
 				<button class="button-close" type="button"><span class="visually-hidden">Зыкрыть окно</span></button>
@@ -440,8 +380,12 @@
 		</section>
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Карта с адрессом офиса</h2>
-			<img src="img/map-big.jpg" width="960" height="559" alt="Карта офиса по адресу улица Строителей, 15">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.332106033883!2d37.52839054055326!3d55.686978838288645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1530396351202" width="960" height="559"></iframe>
+			<div class="map-wrapper">
+				<img src="img/map-big.jpg" width="960" height="559" alt="Карта офиса по адресу улица Строителей, 15">
+			</div>
 			<button class="button-close"><span class="visually-hidden">Зыкрыть окно</span></button>
 		</section>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>
