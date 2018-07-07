@@ -129,7 +129,7 @@ img {
 .modal-feedback form {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	width: 760px;
 }
 
@@ -151,6 +151,10 @@ img {
 	flex-direction: column;
 	width: 360px;
 	margin-bottom: 35px;
+}
+
+.first-feedback-field {
+	margin-right: 40px;
 }
 
 .feedback-field-comment {
@@ -199,16 +203,48 @@ img {
 
 .feedback-field input:focus {
 	background-color: #ffffff;
-	outline-color: #f7e296;
+	outline: 2px solid #f7e296;
 }
 
 .feedback-field textarea:focus {
 	background-color: #ffffff;
-	outline-color: #f7e296;
+	outline: 2px solid #f7e296;
 }
 
 .feedback-field input:invalid {
 	background-color: #f6dada;
+}
+
+.feedback-field input::-webkit-input-placeholder {
+	color: #464646;
+}
+
+.feedback-field input:-ms-input-placeholder {
+	color: #464646;
+}
+
+.feedback-field input::-ms-input-placeholder {
+	color: #464646;
+}
+
+.feedback-field input::placeholder {
+	color: #464646;
+}
+
+.feedback-field textarea::-webkit-input-placeholder {
+	color: #464646;
+}
+
+.feedback-field textarea:-ms-input-placeholder {
+	color: #464646;
+}
+
+.feedback-field textarea::-ms-input-placeholder {
+	color: #464646;
+}
+
+.feedback-field textarea::placeholder {
+	color: #464646;
 }
 
 .button-feedback {
@@ -432,7 +468,7 @@ img {
 
 	width: 405px;
 	margin-right: 135px;
-	margin-top: 43px;
+	margin-top: 40px;
 
 	font-size: 0;
 }
@@ -441,7 +477,7 @@ img {
 	content: "";
 
 	position: absolute;
-	top: 9px;
+	top: 10px;
 	left: 3px;
 
 	width: 15px;
@@ -454,6 +490,7 @@ img {
 
 .search-form input[type="text"] {
 	width: 300px;
+	height: 35px;
 	padding: 0;
 	padding-left: 35px;
 
@@ -471,8 +508,6 @@ img {
 }
 
 .search-form input[type="text"]:focus {
-	margin-top: -15px;
-
 	border-bottom: 2px solid #000000;
 }
 
@@ -480,6 +515,7 @@ img {
 	display: none;
 	width: 85px;
 	height: 46px;
+	margin-top: -9px;
 
 	font-size: 15px;
 	color: #000000;
@@ -1142,22 +1178,20 @@ img {
 	position: absolute;
 	z-index: 3;
 	right: 22px;
-	bottom: 58%;
+	bottom: 240px;
 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 80px;
 	padding: 0;
-
-	font-size: 0;
 }
 
 .slider-control-list label {
 	position: relative;
 	z-index: 3;
 
-	display: inline-block;
+	display: block;
 	width: 12px;
 	height: 12px;
 	margin-right: 0;
@@ -2045,11 +2079,10 @@ img {
 .sorting-category-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 289px;
+	width: 389px;
 	margin: 0;
 	margin-top: -5px;
-	margin-right: 227px;
+	margin-right: 130px;
 	padding: 0;
 
 	list-style: none;
@@ -2057,6 +2090,7 @@ img {
 
 .sorting-category-item {
 	width: auto;
+	margin-right: 28px;
 }
 
 .sorting-priority-list {
@@ -2065,56 +2099,28 @@ img {
 	justify-content: space-between;
 	width: 40px;
 	margin: 0;
+	margin-top: -22px;
 	padding: 0;
 
 	list-style: none;
 }
 
 .sorting-priority-item {
-	position: relative;
-
-	width: auto;
-	margin-right: 15px;
-	cursor: pointer;
-}
-
-.sorting-priority-item:first-child::before {
-	content: "";
-
-	position: absolute;
-	top: -5px;
-	left: 3px;
-
 	width: 11px;
 	height: 10px;
 
-	background-image: url("../img/icons/icon-up-dir.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	opacity: 1;
-}
-
-.sorting-priority-item:last-child::before {
-	content: "";
-
-	position: absolute;
-	top: -5px;
-	left: 6px;
-
-	width: 11px;
-	height: 10px;
-
-	background-image: url("../img/icons/icon-down-dir.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
 	opacity: 0.2;
 }
 
-.sorting-priority-item:hover::before {
+.sorting-priority-item:first-child {
+	opacity: 1;
+}
+
+.sorting-priority-item:hover {
 	opacity: 0.4;
 }
 
-.sorting-priority-item:active::before {
+.sorting-priority-item:active {
 	opacity: 1;
 }
 
@@ -2135,8 +2141,9 @@ img {
 	content: "";
 
 	position: absolute;
+	z-index: -1;
 	top: 0;
-	left: 829px;
+	left: 830px;
 
 	width: calc((100vw - 1172px) / 2);
 	height: 100%;
@@ -2222,6 +2229,9 @@ img {
 	width: 100px;
 	margin-top: 12px;
 
+	font-family: "Gilroy","Arial", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: right;
