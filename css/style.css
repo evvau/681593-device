@@ -2141,8 +2141,9 @@ img {
 	content: "";
 
 	position: absolute;
+	z-index: -1;
 	top: 0;
-	left: 832px;
+	left: 830px;
 
 	width: calc((100vw - 1172px) / 2);
 	height: 100%;
